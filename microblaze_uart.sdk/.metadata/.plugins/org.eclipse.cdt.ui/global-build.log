@@ -1,0 +1,592 @@
+06:09:14 **** Incremental Build of configuration Debug for project uart_interrupts_bsp_xuartlite_intr_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+06:09:20 **** Incremental Build of configuration Debug for project uart_interrupts_bsp_xuartlite_intr_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+06:14:50 **** Incremental Build of configuration Debug for project uart_interrupts_bsp_xuartlite_intr_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+06:15:05 **** Incremental Build of configuration Debug for project uart_interrupts ****
+make all 
+make: Nothing to be done for `all'.
+06:18:51 **** Auto Build of configuration Debug for project uart_interrupts ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../uart_interrupts_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:25:44: error: 'XPAR_AXI_INTC_0_AXI_UARTLITE_0_INTERRUPT_INTR' undeclared (first use in this function); did you mean 'XPAR_AXI_UARTLITE_0_INTERRUPT_MASK'?
+ XIntc_RegisterHandler(XPAR_INTC_0_BASEADDR,XPAR_AXI_INTC_0_AXI_UARTLITE_0_INTERRUPT_INTR,(XInterruptHandler)uart_int_handler,(void *)XPAR_AXI_UARTLITE_0_BASEADDR);
+                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                            XPAR_AXI_UARTLITE_0_INTERRUPT_MASK
+../src/helloworld.c:25:44: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/helloworld.o] Error 1
+06:19:04 **** Auto Build of configuration Debug for project uart_interrupts ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../uart_interrupts_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_interrupts.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../uart_interrupts_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_interrupts.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+/tools/Xilinx/SDK/2018.3/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make: *** [uart_interrupts.elf] Error 1
+06:19:06 **** Auto Build of configuration Debug for project uart_interrupts ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../uart_interrupts_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:130:44: error: 'XPAR_AXI_INTC_0_AXI_UARTLITE_0_INTERRUPT_INTR' undeclared (first use in this function); did you mean 'XPAR_AXI_UARTLITE_0_INTERRUPT_MASK'?
+ XIntc_RegisterHandler(XPAR_INTC_0_BASEADDR,XPAR_AXI_INTC_0_AXI_UARTLITE_0_INTERRUPT_INTR,(XInterruptHandler)uart_int_handler,(void *)XPAR_AXI_UARTLITE_0_BASEADDR);
+                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                            XPAR_AXI_UARTLITE_0_INTERRUPT_MASK
+../src/helloworld.c:130:44: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/helloworld.o] Error 1
+06:19:59 **** Auto Build of configuration Debug for project uart_interrupts ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../uart_interrupts_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:132:4: error: 'XPAR_AXI_INTC_0_AXI_UARTLITE_0_INTERRUPT_INTR' undeclared (first use in this function); did you mean 'XPAR_AXI_UARTLITE_0_INTERRUPT_MASK'?
+    XPAR_AXI_INTC_0_AXI_UARTLITE_0_INTERRUPT_INTR,
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    XPAR_AXI_UARTLITE_0_INTERRUPT_MASK
+../src/helloworld.c:132:4: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/helloworld.o] Error 1
+06:20:53 **** Auto Build of configuration Debug for project uart_interrupts ****
+make all 
+Building file: ../src/helloworld.c
+../src/helloworld.c: In function 'main':
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../uart_interrupts_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:133:5: error: expected expression before 'XInterruptHandler'
+    (XInterruptHandler)uart_int_handler,
+     ^~~~~~~~~~~~~~~~~
+In file included from ../../uart_interrupts_bsp/microblaze_0/include/xil_printf.h:12:0,
+                 from ../../uart_interrupts_bsp/microblaze_0/include/xil_io.h:61,
+                 from ../../uart_interrupts_bsp/microblaze_0/include/xuartlite_l.h:69,
+                 from ../src/helloworld.c:106:
+../../uart_interrupts_bsp/microblaze_0/include/xparameters.h:600:66: error: called object is not a function or function pointer
+ #define XPAR_MICROBLAZE_0_AXI_INTC_AXI_UARTLITE_0_INTERRUPT_INTR 0U
+                                                                  ^
+../src/helloworld.c:132:4: note: in expansion of macro 'XPAR_MICROBLAZE_0_AXI_INTC_AXI_UARTLITE_0_INTERRUPT_INTR'
+    XPAR_MICROBLAZE_0_AXI_INTC_AXI_UARTLITE_0_INTERRUPT_INTR
+    ^
+../src/helloworld.c:133:23: error: expected ')' before 'uart_int_handler'
+    (XInterruptHandler)uart_int_handler,
+                       ^~~~~~~~~~~~~~~~
+../src/helloworld.c:130:2: error: too few arguments to function 'XIntc_RegisterHandler'
+  XIntc_RegisterHandler(
+  ^~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:107:0:
+../../uart_interrupts_bsp/microblaze_0/include/xintc_l.h:317:6: note: declared here
+ void XIntc_RegisterHandler(UINTPTR BaseAddress, int InterruptId,
+      ^~~~~~~~~~~~~~~~~~~~~
+make: *** [src/helloworld.o] Error 1
+06:21:04 **** Auto Build of configuration Debug for project uart_interrupts ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../uart_interrupts_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:132:4: error: 'XPAR_AXI_INTC_0_AXI_UARTLITE_0_INTERRUPT_INTR' undeclared (first use in this function); did you mean 'XPAR_AXI_UARTLITE_0_INTERRUPT_MASK'?
+    XPAR_AXI_INTC_0_AXI_UARTLITE_0_INTERRUPT_INTR,
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    XPAR_AXI_UARTLITE_0_INTERRUPT_MASK
+../src/helloworld.c:132:4: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/helloworld.o] Error 1
+06:21:07 **** Auto Build of configuration Debug for project uart_interrupts ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../uart_interrupts_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_interrupts.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../uart_interrupts_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_interrupts.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_interrupts.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_interrupts.elf  |tee "uart_interrupts.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6484	    316	   3112	   9912	   26b8	uart_interrupts.elf
+Finished building: uart_interrupts.elf.size
+ 
+06:21:21 **** Incremental Build of configuration Debug for project uart_interrupts ****
+make all 
+make: Nothing to be done for `all'.
+06:21:46 **** Auto Build of configuration Debug for project uart_interrupts ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../uart_interrupts_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_interrupts.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../uart_interrupts_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_interrupts.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_interrupts.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_interrupts.elf  |tee "uart_interrupts.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6516	    316	   3112	   9944	   26d8	uart_interrupts.elf
+Finished building: uart_interrupts.elf.size
+ 
+06:21:56 **** Incremental Build of configuration Debug for project uart_interrupts ****
+make all 
+make: Nothing to be done for `all'.
+06:22:18 **** Auto Build of configuration Debug for project uart_interrupts ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../uart_interrupts_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_interrupts.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../uart_interrupts_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_interrupts.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_interrupts.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_interrupts.elf  |tee "uart_interrupts.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6516	    316	   3112	   9944	   26d8	uart_interrupts.elf
+Finished building: uart_interrupts.elf.size
+ 
+06:22:24 **** Incremental Build of configuration Debug for project uart_interrupts ****
+make all 
+make: Nothing to be done for `all'.
+06:23:26 **** Incremental Build of configuration Debug for project uart_interrupts ****
+make all 
+make: Nothing to be done for `all'.
+06:23:47 **** Auto Build of configuration Debug for project uart_interrupts ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../uart_interrupts_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'uart_int_handler':
+../src/helloworld.c:118:15: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [-Wint-conversion]
+   xil_printf (c);
+               ^
+In file included from ../../uart_interrupts_bsp/microblaze_0/include/xil_io.h:61:0,
+                 from ../../uart_interrupts_bsp/microblaze_0/include/xuartlite_l.h:69,
+                 from ../src/helloworld.c:106:
+../../uart_interrupts_bsp/microblaze_0/include/xil_printf.h:39:6: note: expected 'const char8 * {aka const char *}' but argument is of type 'char'
+ void xil_printf( const char8 *ctrl1, ...);
+      ^~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_interrupts.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../uart_interrupts_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_interrupts.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_interrupts.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_interrupts.elf  |tee "uart_interrupts.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6488	    316	   3108	   9912	   26b8	uart_interrupts.elf
+Finished building: uart_interrupts.elf.size
+ 
+06:23:50 **** Auto Build of configuration Debug for project uart_interrupts ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../uart_interrupts_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_interrupts.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../uart_interrupts_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_interrupts.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_interrupts.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_interrupts.elf  |tee "uart_interrupts.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6500	    316	   3112	   9928	   26c8	uart_interrupts.elf
+Finished building: uart_interrupts.elf.size
+ 
+06:23:57 **** Incremental Build of configuration Debug for project uart_interrupts ****
+make all 
+make: Nothing to be done for `all'.
+06:35:53 **** Auto Build of configuration Debug for project uart_interrupts ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../uart_interrupts_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:139:2: warning: implicit declaration of function 'XIntc_mMasterEnable'; did you mean 'XIntc_MasterEnable'? [-Wimplicit-function-declaration]
+  XIntc_mMasterEnable(XPAR_INTC_0_BASEADDR);
+  ^~~~~~~~~~~~~~~~~~~
+  XIntc_MasterEnable
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_interrupts.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../uart_interrupts_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_interrupts.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `main':
+/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/../src/helloworld.c:139: undefined reference to `XIntc_mMasterEnable'
+collect2: error: ld returned 1 exit status
+make: *** [uart_interrupts.elf] Error 1
+06:35:55 **** Auto Build of configuration Debug for project uart_interrupts ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../uart_interrupts_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_interrupts.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../uart_interrupts_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_interrupts.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_interrupts.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_interrupts.elf  |tee "uart_interrupts.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6500	    316	   3112	   9928	   26c8	uart_interrupts.elf
+Finished building: uart_interrupts.elf.size
+ 
+06:36:07 **** Auto Build of configuration Debug for project uart_interrupts ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../uart_interrupts_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:140:2: warning: implicit declaration of function 'XIntc_mMasterEnable'; did you mean 'XIntc_MasterEnable'? [-Wimplicit-function-declaration]
+  XIntc_mMasterEnable();
+  ^~~~~~~~~~~~~~~~~~~
+  XIntc_MasterEnable
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_interrupts.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../uart_interrupts_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_interrupts.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `main':
+/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/../src/helloworld.c:140: undefined reference to `XIntc_mMasterEnable'
+collect2: error: ld returned 1 exit status
+make: *** [uart_interrupts.elf] Error 1
+06:36:13 **** Auto Build of configuration Debug for project uart_interrupts ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../uart_interrupts_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_interrupts.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../uart_interrupts_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_interrupts.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_interrupts.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_interrupts.elf  |tee "uart_interrupts.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6500	    316	   3112	   9928	   26c8	uart_interrupts.elf
+Finished building: uart_interrupts.elf.size
+ 
+06:47:18 **** Auto Build of configuration Debug for project uart_interrupts ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../uart_interrupts_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_interrupts.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../uart_interrupts_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_interrupts.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_interrupts.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_interrupts.elf  |tee "uart_interrupts.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6500	    316	   3112	   9928	   26c8	uart_interrupts.elf
+Finished building: uart_interrupts.elf.size
+ 
+06:53:26 **** Auto Build of configuration Debug for project uart_interrupts ****
+make all 
+Building file: ../src/helloworld.c
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:129:23: error: expected declaration specifiers or '...' before '&' token
+  int XGpio_Initialize(&gpio, XPAR_AXI_GPIO_0_DEVICE_ID);
+                       ^
+In file included from ../../uart_interrupts_bsp/microblaze_0/include/xil_printf.h:12:0,
+                 from ../../uart_interrupts_bsp/microblaze_0/include/xil_io.h:61,
+                 from ../../uart_interrupts_bsp/microblaze_0/include/xuartlite_l.h:69,
+                 from ../src/helloworld.c:106:
+../../uart_interrupts_bsp/microblaze_0/include/xparameters.h:557:35: error: expected declaration specifiers or '...' before numeric constant
+ #define XPAR_AXI_GPIO_0_DEVICE_ID 0
+                                   ^
+../src/helloworld.c:129:30: note: in expansion of macro 'XPAR_AXI_GPIO_0_DEVICE_ID'
+  int XGpio_Initialize(&gpio, XPAR_AXI_GPIO_0_DEVICE_ID);
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:127:8: warning: unused variable 'gpio' [-Wunused-variable]
+  XGpio gpio;
+        ^~~~
+make: *** [src/helloworld.o] Error 1
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../uart_interrupts_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+06:53:45 **** Auto Build of configuration Debug for project uart_interrupts ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../uart_interrupts_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_interrupts.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../uart_interrupts_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_interrupts.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_interrupts.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_interrupts.elf  |tee "uart_interrupts.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6892	    336	   3116	  10344	   2868	uart_interrupts.elf
+Finished building: uart_interrupts.elf.size
+ 
+06:54:42 **** Auto Build of configuration Debug for project uart_interrupts ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../uart_interrupts_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:133:32: error: 'channel' undeclared (first use in this function)
+  XGpio_SetDataDirection(&gpio, channel, mask);
+                                ^~~~~~~
+../src/helloworld.c:133:32: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:133:41: error: 'mask' undeclared (first use in this function); did you mean 'main'?
+  XGpio_SetDataDirection(&gpio, channel, mask);
+                                         ^~~~
+                                         main
+make: *** [src/helloworld.o] Error 1
+06:56:52 **** Auto Build of configuration Debug for project uart_interrupts ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../uart_interrupts_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:135:29: error: 'channel' undeclared (first use in this function)
+  XGpio_DiscreteWrite(&gpio, channel, mask);
+                             ^~~~~~~
+../src/helloworld.c:135:29: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:135:38: error: 'mask' undeclared (first use in this function); did you mean 'main'?
+  XGpio_DiscreteWrite(&gpio, channel, mask);
+                                      ^~~~
+                                      main
+make: *** [src/helloworld.o] Error 1
+06:57:48 **** Auto Build of configuration Debug for project uart_interrupts ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../uart_interrupts_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_interrupts.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../uart_interrupts_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_interrupts.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_interrupts.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_interrupts.elf  |tee "uart_interrupts.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7428	    336	   3116	  10880	   2a80	uart_interrupts.elf
+Finished building: uart_interrupts.elf.size
+ 
+06:57:52 **** Incremental Build of configuration Debug for project uart_interrupts ****
+make all 
+make: Nothing to be done for `all'.
+06:58:45 **** Auto Build of configuration Debug for project uart_interrupts ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../uart_interrupts_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_interrupts.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../uart_interrupts_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_interrupts.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_interrupts.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_interrupts.elf  |tee "uart_interrupts.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7428	    336	   3116	  10880	   2a80	uart_interrupts.elf
+Finished building: uart_interrupts.elf.size
+ 
+06:58:47 **** Incremental Build of configuration Debug for project uart_interrupts ****
+make all 
+make: Nothing to be done for `all'.
+06:58:56 **** Auto Build of configuration Debug for project uart_interrupts ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../uart_interrupts_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_interrupts.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../uart_interrupts_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_interrupts.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_interrupts.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_interrupts.elf  |tee "uart_interrupts.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7424	    336	   3112	  10872	   2a78	uart_interrupts.elf
+Finished building: uart_interrupts.elf.size
+ 
+06:58:58 **** Incremental Build of configuration Debug for project uart_interrupts ****
+make all 
+make: Nothing to be done for `all'.
+06:59:03 **** Incremental Build of configuration Debug for project uart_interrupts ****
+make all 
+make: Nothing to be done for `all'.
+06:59:12 **** Auto Build of configuration Debug for project uart_interrupts ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../uart_interrupts_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_interrupts.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../uart_interrupts_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_interrupts.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_interrupts.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_interrupts.elf  |tee "uart_interrupts.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7432	    336	   3112	  10880	   2a80	uart_interrupts.elf
+Finished building: uart_interrupts.elf.size
+ 
+06:59:13 **** Incremental Build of configuration Debug for project uart_interrupts ****
+make all 
+make: Nothing to be done for `all'.
+06:59:22 **** Auto Build of configuration Debug for project uart_interrupts ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../uart_interrupts_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_interrupts.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../uart_interrupts_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_interrupts.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_interrupts.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_interrupts.elf  |tee "uart_interrupts.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7428	    336	   3116	  10880	   2a80	uart_interrupts.elf
+Finished building: uart_interrupts.elf.size
+ 
+06:59:31 **** Auto Build of configuration Debug for project uart_interrupts ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../uart_interrupts_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_interrupts.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../uart_interrupts_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_interrupts.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_interrupts.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_interrupts.elf  |tee "uart_interrupts.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7424	    336	   3112	  10872	   2a78	uart_interrupts.elf
+Finished building: uart_interrupts.elf.size
+ 
+06:59:33 **** Incremental Build of configuration Debug for project uart_interrupts ****
+make all 
+make: Nothing to be done for `all'.
+06:59:44 **** Auto Build of configuration Debug for project uart_interrupts ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../uart_interrupts_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_interrupts.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../uart_interrupts_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_interrupts.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_interrupts.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_interrupts.elf  |tee "uart_interrupts.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7424	    336	   3112	  10872	   2a78	uart_interrupts.elf
+Finished building: uart_interrupts.elf.size
+ 
+06:59:46 **** Incremental Build of configuration Debug for project uart_interrupts ****
+make all 
+make: Nothing to be done for `all'.
+06:59:57 **** Auto Build of configuration Debug for project uart_interrupts ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../uart_interrupts_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_interrupts.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../uart_interrupts_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_interrupts.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_interrupts.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_interrupts.elf  |tee "uart_interrupts.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7424	    336	   3112	  10872	   2a78	uart_interrupts.elf
+Finished building: uart_interrupts.elf.size
+ 
+06:59:59 **** Incremental Build of configuration Debug for project uart_interrupts ****
+make all 
+make: Nothing to be done for `all'.
+07:00:16 **** Auto Build of configuration Debug for project uart_interrupts ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../uart_interrupts_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_interrupts.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../uart_interrupts_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_interrupts.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_interrupts.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_interrupts.elf  |tee "uart_interrupts.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7424	    336	   3112	  10872	   2a78	uart_interrupts.elf
+Finished building: uart_interrupts.elf.size
+ 
+07:00:36 **** Auto Build of configuration Debug for project uart_interrupts ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../uart_interrupts_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_interrupts.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../uart_interrupts_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_interrupts.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_interrupts.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_interrupts.elf  |tee "uart_interrupts.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7424	    336	   3112	  10872	   2a78	uart_interrupts.elf
+Finished building: uart_interrupts.elf.size
+ 
+07:07:56 **** Incremental Build of configuration Debug for project uart_interrupts ****
+make all 
+make: Nothing to be done for `all'.
+07:08:20 **** Incremental Build of configuration Debug for project uart_interrupts ****
+make all 
+make: Nothing to be done for `all'.

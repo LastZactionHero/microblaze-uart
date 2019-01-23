@@ -1,0 +1,6 @@
+02:42:37 **** Incremental Build of configuration Debug for project uart_interrupts_bsp_xgpio_low_level_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+
+02:42:37 Build Finished (took 107ms)
+

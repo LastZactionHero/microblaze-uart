@@ -1,0 +1,6 @@
+06:14:50 **** Incremental Build of configuration Debug for project uart_interrupts_bsp_xuartlite_intr_example_1 ****
+make all 
+make: Nothing to be done for `all'.
+
+06:14:50 Build Finished (took 76ms)
+
