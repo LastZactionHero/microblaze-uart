@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-//Date        : Tue Jan 22 22:06:19 2019
+//Date        : Sat Jan 26 20:53:48 2019
 //Host        : vivado running 64-bit unknown
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -10,7 +10,9 @@
 `timescale 1 ps / 1 ps
 
 module design_1_wrapper
-   (ddr3_sdram_addr,
+   (UART_0_rxd,
+    UART_0_txd,
+    ddr3_sdram_addr,
     ddr3_sdram_ba,
     ddr3_sdram_cas_n,
     ddr3_sdram_ck_n,
@@ -30,6 +32,8 @@ module design_1_wrapper
     sys_clock,
     usb_uart_rxd,
     usb_uart_txd);
+  input UART_0_rxd;
+  output UART_0_txd;
   output [13:0]ddr3_sdram_addr;
   output [2:0]ddr3_sdram_ba;
   output ddr3_sdram_cas_n;
@@ -51,6 +55,8 @@ module design_1_wrapper
   input usb_uart_rxd;
   output usb_uart_txd;
 
+  wire UART_0_rxd;
+  wire UART_0_txd;
   wire [13:0]ddr3_sdram_addr;
   wire [2:0]ddr3_sdram_ba;
   wire ddr3_sdram_cas_n;
@@ -88,7 +94,9 @@ module design_1_wrapper
   wire usb_uart_txd;
 
   design_1 design_1_i
-       (.ddr3_sdram_addr(ddr3_sdram_addr),
+       (.UART_0_rxd(UART_0_rxd),
+        .UART_0_txd(UART_0_txd),
+        .ddr3_sdram_addr(ddr3_sdram_addr),
         .ddr3_sdram_ba(ddr3_sdram_ba),
         .ddr3_sdram_cas_n(ddr3_sdram_cas_n),
         .ddr3_sdram_ck_n(ddr3_sdram_ck_n),

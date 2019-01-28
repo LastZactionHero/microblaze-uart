@@ -1,0 +1,123 @@
+#include <xuartlite_l.h>
+#include <xgpio.h>
+#include <xintc_l.h>
+#include <xuartlite.h>
+#include <xparameters.h>
+#include <string.h>
+
+XUartLite uart0;
+XGpio gpio;
+unsigned int light;
+
+unsigned char *uartSendBuffer[256];
+unsigned int uartIdx = 0;
+
+unsigned int *uart_tx_fifo;
+
+
+/* uartlite interrupt service routine */
+void uart_int_handler(void *baseaddr_p) {
+	char c;
+
+	light++;
+	XGpio_DiscreteWrite(&gpio, 1, light);
+
+	/* till uart FIFOs are empty */
+	while (!XUartLite_IsReceiveEmpty(baseaddr_p)) {
+		/* read a character */
+		c = XUartLite_RecvByte(baseaddr_p);
+		// Echo
+		XUartLite_SendByte(baseaddr_p, c);
+	}
+}
+
+void uart_print(unsigned char *buffer, void *baseaddr_p) {
+	for(int i = 0; i < strlen(buffer); i++) {
+		XUartLite_SendByte(baseaddr_p, buffer[i]);
+	}
+
+}
+
+static unsigned char *buffer = "hello world!\r\n";
+
+int main(void)
+{
+	light = 1;
+//	xil_printf("\r\n012345678901234567890\r\n");
+
+	// Write something to GPIO
+	XGpio_Initialize(&gpio, XPAR_AXI_GPIO_0_DEVICE_ID);
+	XGpio_SetDataDirection(&gpio, 1, 0xFFFFFFF0);
+	XGpio_DiscreteWrite(&gpio, 1, light);
+
+	/* Enable MicroBlaze exception */
+	microblaze_enable_interrupts();
+
+	/* Connect uart interrupt handler that will be called when an interrupt
+	 * for the uart occurs*/
+	XIntc_RegisterHandler(
+			XPAR_INTC_0_BASEADDR,
+			XPAR_MICROBLAZE_0_AXI_INTC_AXI_UARTLITE_0_INTERRUPT_INTR,
+			(XInterruptHandler)uart_int_handler,
+			(void *)XPAR_AXI_UARTLITE_0_BASEADDR
+	);
+
+	// Connect UART 1 interrupt handler
+	XIntc_RegisterHandler(
+			XPAR_INTC_0_BASEADDR,
+			XPAR_MICROBLAZE_0_AXI_INTC_AXI_UARTLITE_1_INTERRUPT_INTR,
+			(XInterruptHandler)uart_int_handler,
+			(void *)XPAR_AXI_UARTLITE_1_BASEADDR
+	);
+
+	/* Start the interrupt controller */
+	XIntc_MasterEnable(XPAR_INTC_0_BASEADDR);
+
+	/* Enable uart interrupt in the interrupt controller */
+	XIntc_EnableIntr(XPAR_INTC_0_BASEADDR, XPAR_AXI_UARTLITE_0_INTERRUPT_MASK | XPAR_AXI_UARTLITE_1_INTERRUPT_MASK);
+
+	/* Enable Uartlite interrupt */
+	XUartLite_EnableIntr(XPAR_AXI_UARTLITE_0_BASEADDR);
+	XUartLite_EnableIntr(XPAR_AXI_UARTLITE_1_BASEADDR);
+
+//	uart_tx_fifo = XPAR_AXI_UARTLITE_0_BASEADDR + XUL_TX_FIFO_OFFSET;
+//	strcpy(uart_tx_fifo, "1234567890123456");
+	XUartLite_WriteReg(XPAR_AXI_UARTLITE_0_BASEADDR, XUL_TX_FIFO_OFFSET, "x");
+
+//	XPAR_AXI_UARTLITE_0_BASEADDR
+//	uart_print("hello world!\r\n", XPAR_AXI_UARTLITE_0_BASEADDR);
+//	XUartLite uart0;
+//	XUartLite_Initialize(&uart0, XPAR_AXI_UARTLITE_0_DEVICE_ID);
+//	XUartLite_SetSendHandler(&uart0, sendHandler, &uart0);
+
+//	XUartLite_SendByte(XPAR_AXI_UARTLITE_0_BASEADDR, 65);
+//	XUartLite_SendByte(XPAR_AXI_UARTLITE_0_BASEADDR, 66);
+//	XUartLite_SendByte(XPAR_AXI_UARTLITE_0_BASEADDR, 67);
+//	XUartLite_SendByte(XPAR_AXI_UARTLITE_0_BASEADDR, 68);
+//	XUartLite_SendByte(XPAR_AXI_UARTLITE_0_BASEADDR, 69);
+//	XUartLite_SendByte(XPAR_AXI_UARTLITE_0_BASEADDR, 70);
+//	XUartLite_SendByte(XPAR_AXI_UARTLITE_0_BASEADDR, 71);
+//	XUartLite_SendByte(XPAR_AXI_UARTLITE_0_BASEADDR, 72);
+//	XUartLite_SendByte(XPAR_AXI_UARTLITE_0_BASEADDR, 73);
+//	XUartLite_SendByte(XPAR_AXI_UARTLITE_0_BASEADDR, 74);
+//	XUartLite_SendByte(XPAR_AXI_UARTLITE_0_BASEADDR, 75);
+//	XUartLite_SendByte(XPAR_AXI_UARTLITE_0_BASEADDR, 76);
+//	XUartLite_SendByte(XPAR_AXI_UARTLITE_0_BASEADDR, 77);
+//	XUartLite_SendByte(XPAR_AXI_UARTLITE_0_BASEADDR, 78);
+//	XUartLite_SendByte(XPAR_AXI_UARTLITE_0_BASEADDR, 79);
+//	XUartLite_SendByte(XPAR_AXI_UARTLITE_0_BASEADDR, 80);
+//	XUartLite_SendByte(XPAR_AXI_UARTLITE_0_BASEADDR, 81);
+//	XUartLite_SendByte(XPAR_AXI_UARTLITE_0_BASEADDR, 82);
+
+//	XUartLite_SendByte(XPAR_AXI_UARTLITE_1_BASEADDR, 66);
+
+
+
+//					void *CallBackRef);
+
+//	XUartLite_Send(&uart0, buffer, 14);
+
+
+	/* Wait for interrupts to occur */
+	while (1);
+}

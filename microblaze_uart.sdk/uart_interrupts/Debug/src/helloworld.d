@@ -12,6 +12,7 @@ src/helloworld.o src/helloworld.o: ../src/helloworld.c \
  ../../uart_interrupts_bsp/microblaze_0/include/xstatus.h \
  ../../uart_interrupts_bsp/microblaze_0/include/xgpio_l.h \
  ../../uart_interrupts_bsp/microblaze_0/include/xintc_l.h \
+ ../../uart_interrupts_bsp/microblaze_0/include/xuartlite.h \
  ../../uart_interrupts_bsp/microblaze_0/include/xparameters.h
 
 ../../uart_interrupts_bsp/microblaze_0/include/xuartlite_l.h:
@@ -39,5 +40,7 @@ src/helloworld.o src/helloworld.o: ../src/helloworld.c \
 ../../uart_interrupts_bsp/microblaze_0/include/xgpio_l.h:
 
 ../../uart_interrupts_bsp/microblaze_0/include/xintc_l.h:
+
+../../uart_interrupts_bsp/microblaze_0/include/xuartlite.h:
 
 ../../uart_interrupts_bsp/microblaze_0/include/xparameters.h:

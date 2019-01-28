@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date                      : Tue Jan 22 22:24:29 2019
+| Date                      : Sat Jan 26 21:09:13 2019
 | Host                      : vivado running 64-bit unknown
 | Command                   : report_io -file design_1_wrapper_io_placed.rpt
 | Design                    : design_1_wrapper
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|            56 |
+|            58 |
 +---------------+
 
 
@@ -338,7 +338,7 @@ Table of Contents
 | U13        |                     | High Range | IO_L23N_T3_A02_D18_14        | User IO     |              |      14 |            |      |                     |                      |         |            |           |          |          |                  |              |                   |              |
 | U14        |                     | High Range | IO_L22P_T3_A05_D21_14        | User IO     |              |      14 |            |      |                     |                      |         |            |           |          |          |                  |              |                   |              |
 | U15        |                     | High Range | VCCO_14                      | VCCO        |              |      14 |            |      |                     |                      |    3.30 |            |           |          |          |                  |              |                   |              |
-| U16        |                     | High Range | IO_L18P_T2_A12_D28_14        | User IO     |              |      14 |            |      |                     |                      |         |            |           |          |          |                  |              |                   |              |
+| U16        | UART_0_txd          | High Range | IO_L18P_T2_A12_D28_14        | OUTPUT      | LVCMOS33     |      14 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |          | NONE             |              |                   |              |
 | U17        |                     | High Range | IO_L17P_T2_A14_D30_14        | User IO     |              |      14 |            |      |                     |                      |         |            |           |          |          |                  |              |                   |              |
 | U18        |                     | High Range | IO_L17N_T2_A13_D29_14        | User IO     |              |      14 |            |      |                     |                      |         |            |           |          |          |                  |              |                   |              |
 | V1         | ddr3_sdram_dq[12]   | High Range | IO_L7N_T1_34                 | BIDIR       | SSTL135      |      34 |            | FAST |    UNTUNED_SPLIT_50 |            FP_VTT_50 |         | FIXED      |           |          | Internal | NONE             |              |                   |              |
@@ -355,7 +355,7 @@ Table of Contents
 | V12        |                     | High Range | IO_L20N_T3_A07_D23_14        | User IO     |              |      14 |            |      |                     |                      |         |            |           |          |          |                  |              |                   |              |
 | V13        |                     |            | GND                          | GND         |              |         |            |      |                     |                      |     0.0 |            |           |          |          |                  |              |                   |              |
 | V14        |                     | High Range | IO_L22N_T3_A04_D20_14        | User IO     |              |      14 |            |      |                     |                      |         |            |           |          |          |                  |              |                   |              |
-| V15        |                     | High Range | IO_L16P_T2_CSI_B_14          | User IO     |              |      14 |            |      |                     |                      |         |            |           |          |          |                  |              |                   |              |
+| V15        | UART_0_rxd          | High Range | IO_L16P_T2_CSI_B_14          | INPUT       | LVCMOS33     |      14 |            |      |                     |                 NONE |         | FIXED      |           |          |          | NONE             |              |                   |              |
 | V16        |                     | High Range | IO_L16N_T2_A15_D31_14        | User IO     |              |      14 |            |      |                     |                      |         |            |           |          |          |                  |              |                   |              |
 | V17        |                     | High Range | IO_L18N_T2_A11_D27_14        | User IO     |              |      14 |            |      |                     |                      |         |            |           |          |          |                  |              |                   |              |
 | V18        |                     | High Range | VCCO_14                      | VCCO        |              |      14 |            |      |                     |                      |    3.30 |            |           |          |          |                  |              |                   |              |
