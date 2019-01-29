@@ -87,15 +87,15 @@ set_property used_in_implementation false [get_files -all /root/Development/micr
 set_property used_in_implementation false [get_files -all /root/Development/microblaze_uart/microblaze_uart.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_25/bd_afc3_m00awn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /root/Development/microblaze_uart/microblaze_uart.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_26/bd_afc3_m00wn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /root/Development/microblaze_uart/microblaze_uart.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_27/bd_afc3_m00bn_0_ooc.xdc]
-set_property used_in_synthesis false [get_files -all /root/Development/microblaze_uart/microblaze_uart.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all /root/Development/microblaze_uart/microblaze_uart.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all /root/Development/microblaze_uart/microblaze_uart.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /root/Development/microblaze_uart/microblaze_uart.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_1_0/design_1_axi_uartlite_1_0_board.xdc]
 set_property used_in_implementation false [get_files -all /root/Development/microblaze_uart/microblaze_uart.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_1_0/design_1_axi_uartlite_1_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /root/Development/microblaze_uart/microblaze_uart.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_1_0/design_1_axi_uartlite_1_0.xdc]
 set_property used_in_implementation false [get_files -all /root/Development/microblaze_uart/microblaze_uart.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_166M_0/design_1_rst_clk_wiz_0_166M_0_board.xdc]
 set_property used_in_implementation false [get_files -all /root/Development/microblaze_uart/microblaze_uart.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_166M_0/design_1_rst_clk_wiz_0_166M_0.xdc]
 set_property used_in_implementation false [get_files -all /root/Development/microblaze_uart/microblaze_uart.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_166M_0/design_1_rst_clk_wiz_0_166M_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all /root/Development/microblaze_uart/microblaze_uart.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /root/Development/microblaze_uart/microblaze_uart.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /root/Development/microblaze_uart/microblaze_uart.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /root/Development/microblaze_uart/microblaze_uart.srcs/sources_1/bd/design_1/design_1_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being

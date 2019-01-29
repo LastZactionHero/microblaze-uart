@@ -5026,3 +5026,1870 @@ con
 ----------------End of Script----------------
 
 21:02:45 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+21:06:43 INFO  : Disconnected from the channel tcfchan#126.
+21:07:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+21:07:00 INFO  : 'fpga -state' command is executed.
+21:07:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:07:00 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+21:07:00 INFO  : 'jtag frequency' command is executed.
+21:07:00 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:07:00 INFO  : Context for processor 'microblaze_0' is selected.
+21:07:00 INFO  : Processor reset is completed for 'microblaze_0'.
+21:07:00 INFO  : Context for processor 'microblaze_0' is selected.
+21:07:01 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+21:07:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+21:07:01 INFO  : Memory regions updated for context PA
+21:07:01 INFO  : Memory regions updated for context PA
+21:07:01 INFO  : Context for processor 'microblaze_0' is selected.
+21:07:01 INFO  : 'con' command is executed.
+21:07:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+21:07:01 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+21:07:40 INFO  : Disconnected from the channel tcfchan#127.
+21:07:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+21:07:57 INFO  : 'fpga -state' command is executed.
+21:07:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:07:57 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+21:07:57 INFO  : 'jtag frequency' command is executed.
+21:07:57 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:07:57 INFO  : Context for processor 'microblaze_0' is selected.
+21:07:57 INFO  : Processor reset is completed for 'microblaze_0'.
+21:07:57 INFO  : Context for processor 'microblaze_0' is selected.
+21:07:57 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+21:07:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+21:07:58 INFO  : Memory regions updated for context PA
+21:07:58 INFO  : Memory regions updated for context PA
+21:07:58 INFO  : Context for processor 'microblaze_0' is selected.
+21:07:58 INFO  : 'con' command is executed.
+21:07:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+21:07:58 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+21:09:55 INFO  : Disconnected from the channel tcfchan#128.
+21:09:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+21:09:57 INFO  : 'fpga -state' command is executed.
+21:09:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:09:57 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+21:09:57 INFO  : 'jtag frequency' command is executed.
+21:09:57 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:09:57 INFO  : Context for processor 'microblaze_0' is selected.
+21:09:57 INFO  : Processor reset is completed for 'microblaze_0'.
+21:09:57 INFO  : Context for processor 'microblaze_0' is selected.
+21:09:58 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+21:09:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+21:09:58 INFO  : Memory regions updated for context PA
+21:09:58 INFO  : Memory regions updated for context PA
+21:09:58 INFO  : Context for processor 'microblaze_0' is selected.
+21:09:58 INFO  : 'con' command is executed.
+21:09:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+21:09:58 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+21:10:36 INFO  : Disconnected from the channel tcfchan#129.
+21:10:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+21:10:49 INFO  : 'fpga -state' command is executed.
+21:10:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:10:49 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+21:10:50 INFO  : 'jtag frequency' command is executed.
+21:10:50 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:10:50 INFO  : Context for processor 'microblaze_0' is selected.
+21:10:50 INFO  : Processor reset is completed for 'microblaze_0'.
+21:10:50 INFO  : Context for processor 'microblaze_0' is selected.
+21:10:50 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+21:10:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+21:10:51 INFO  : Memory regions updated for context PA
+21:10:51 INFO  : Memory regions updated for context PA
+21:10:51 INFO  : Context for processor 'microblaze_0' is selected.
+21:10:51 INFO  : 'con' command is executed.
+21:10:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+21:10:51 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+21:11:01 INFO  : Disconnected from the channel tcfchan#130.
+21:11:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+21:11:15 INFO  : 'fpga -state' command is executed.
+21:11:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:11:15 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+21:11:15 INFO  : 'jtag frequency' command is executed.
+21:11:15 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:11:15 INFO  : Context for processor 'microblaze_0' is selected.
+21:11:15 INFO  : Processor reset is completed for 'microblaze_0'.
+21:11:15 INFO  : Context for processor 'microblaze_0' is selected.
+21:11:16 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+21:11:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+21:11:16 INFO  : Memory regions updated for context PA
+21:11:16 INFO  : Memory regions updated for context PA
+21:11:16 INFO  : Context for processor 'microblaze_0' is selected.
+21:11:16 INFO  : 'con' command is executed.
+21:11:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+21:11:16 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+21:11:35 INFO  : Disconnected from the channel tcfchan#131.
+21:11:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+21:11:38 INFO  : 'fpga -state' command is executed.
+21:11:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:11:38 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+21:11:38 INFO  : 'jtag frequency' command is executed.
+21:11:38 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:11:38 INFO  : Context for processor 'microblaze_0' is selected.
+21:11:38 INFO  : Processor reset is completed for 'microblaze_0'.
+21:11:38 INFO  : Context for processor 'microblaze_0' is selected.
+21:11:38 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+21:11:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+21:11:39 INFO  : Memory regions updated for context PA
+21:11:39 INFO  : Memory regions updated for context PA
+21:11:39 INFO  : Context for processor 'microblaze_0' is selected.
+21:11:39 INFO  : 'con' command is executed.
+21:11:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+21:11:39 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+21:12:39 INFO  : Disconnected from the channel tcfchan#132.
+21:12:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+21:12:41 INFO  : 'fpga -state' command is executed.
+21:12:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:12:41 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+21:12:41 INFO  : 'jtag frequency' command is executed.
+21:12:41 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:12:41 INFO  : Context for processor 'microblaze_0' is selected.
+21:12:41 INFO  : Processor reset is completed for 'microblaze_0'.
+21:12:41 INFO  : Context for processor 'microblaze_0' is selected.
+21:12:42 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+21:12:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+21:12:42 INFO  : Memory regions updated for context PA
+21:12:42 INFO  : Memory regions updated for context PA
+21:12:42 INFO  : Context for processor 'microblaze_0' is selected.
+21:12:42 INFO  : 'con' command is executed.
+21:12:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+21:12:42 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+21:12:52 INFO  : Disconnected from the channel tcfchan#133.
+21:12:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+21:12:54 INFO  : 'fpga -state' command is executed.
+21:12:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:12:54 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+21:12:54 INFO  : 'jtag frequency' command is executed.
+21:12:54 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:12:54 INFO  : Context for processor 'microblaze_0' is selected.
+21:12:54 INFO  : Processor reset is completed for 'microblaze_0'.
+21:12:54 INFO  : Context for processor 'microblaze_0' is selected.
+21:12:55 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+21:12:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+21:12:55 INFO  : Memory regions updated for context PA
+21:12:55 INFO  : Memory regions updated for context PA
+21:12:55 INFO  : Context for processor 'microblaze_0' is selected.
+21:12:55 INFO  : 'con' command is executed.
+21:12:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+21:12:55 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+21:13:00 INFO  : Disconnected from the channel tcfchan#134.
+21:13:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+21:13:14 INFO  : 'fpga -state' command is executed.
+21:13:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:13:15 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+21:13:15 INFO  : 'jtag frequency' command is executed.
+21:13:15 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:13:15 INFO  : Context for processor 'microblaze_0' is selected.
+21:13:15 INFO  : Processor reset is completed for 'microblaze_0'.
+21:13:15 INFO  : Context for processor 'microblaze_0' is selected.
+21:13:15 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+21:13:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+21:13:16 INFO  : Memory regions updated for context PA
+21:13:16 INFO  : Memory regions updated for context PA
+21:13:16 INFO  : Context for processor 'microblaze_0' is selected.
+21:13:16 INFO  : 'con' command is executed.
+21:13:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+21:13:16 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+21:14:03 INFO  : Disconnected from the channel tcfchan#135.
+21:14:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+21:14:05 INFO  : 'fpga -state' command is executed.
+21:14:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:14:05 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+21:14:05 INFO  : 'jtag frequency' command is executed.
+21:14:05 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:14:05 INFO  : Context for processor 'microblaze_0' is selected.
+21:14:05 INFO  : Processor reset is completed for 'microblaze_0'.
+21:14:05 INFO  : Context for processor 'microblaze_0' is selected.
+21:14:06 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+21:14:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+21:14:06 INFO  : Memory regions updated for context PA
+21:14:06 INFO  : Memory regions updated for context PA
+21:14:06 INFO  : Context for processor 'microblaze_0' is selected.
+21:14:06 INFO  : 'con' command is executed.
+21:14:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+21:14:06 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+21:14:10 INFO  : Disconnected from the channel tcfchan#136.
+21:14:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+21:14:11 INFO  : 'fpga -state' command is executed.
+21:14:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:14:11 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+21:14:11 INFO  : 'jtag frequency' command is executed.
+21:14:12 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:14:12 INFO  : Context for processor 'microblaze_0' is selected.
+21:14:12 INFO  : Processor reset is completed for 'microblaze_0'.
+21:14:12 INFO  : Context for processor 'microblaze_0' is selected.
+21:14:12 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+21:14:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+21:14:13 INFO  : Memory regions updated for context PA
+21:14:13 INFO  : Memory regions updated for context PA
+21:14:13 INFO  : Context for processor 'microblaze_0' is selected.
+21:14:13 INFO  : 'con' command is executed.
+21:14:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+21:14:13 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+21:14:16 INFO  : Disconnected from the channel tcfchan#137.
+21:14:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+21:14:30 INFO  : 'fpga -state' command is executed.
+21:14:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:14:30 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+21:14:30 INFO  : 'jtag frequency' command is executed.
+21:14:30 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:14:30 INFO  : Context for processor 'microblaze_0' is selected.
+21:14:30 INFO  : Processor reset is completed for 'microblaze_0'.
+21:14:30 INFO  : Context for processor 'microblaze_0' is selected.
+21:14:31 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+21:14:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+21:14:31 INFO  : Memory regions updated for context PA
+21:14:31 INFO  : Memory regions updated for context PA
+21:14:31 INFO  : Context for processor 'microblaze_0' is selected.
+21:14:31 INFO  : 'con' command is executed.
+21:14:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+21:14:31 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+21:15:24 INFO  : Disconnected from the channel tcfchan#138.
+21:15:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+21:15:26 INFO  : 'fpga -state' command is executed.
+21:15:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:15:26 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+21:15:26 INFO  : 'jtag frequency' command is executed.
+21:15:26 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:15:26 INFO  : Context for processor 'microblaze_0' is selected.
+21:15:26 INFO  : Processor reset is completed for 'microblaze_0'.
+21:15:26 INFO  : Context for processor 'microblaze_0' is selected.
+21:15:26 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+21:15:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+21:15:27 INFO  : Memory regions updated for context PA
+21:15:27 INFO  : Memory regions updated for context PA
+21:15:27 INFO  : Context for processor 'microblaze_0' is selected.
+21:15:27 INFO  : 'con' command is executed.
+21:15:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+21:15:27 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+21:15:53 INFO  : Disconnected from the channel tcfchan#139.
+21:16:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+21:16:06 INFO  : 'fpga -state' command is executed.
+21:16:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:16:06 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+21:16:06 INFO  : 'jtag frequency' command is executed.
+21:16:06 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:16:06 INFO  : Context for processor 'microblaze_0' is selected.
+21:16:06 INFO  : Processor reset is completed for 'microblaze_0'.
+21:16:06 INFO  : Context for processor 'microblaze_0' is selected.
+21:16:07 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+21:16:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+21:16:07 INFO  : Memory regions updated for context PA
+21:16:07 INFO  : Memory regions updated for context PA
+21:16:07 INFO  : Context for processor 'microblaze_0' is selected.
+21:16:07 INFO  : 'con' command is executed.
+21:16:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+21:16:07 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+21:16:24 INFO  : Disconnected from the channel tcfchan#140.
+21:16:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+21:16:25 INFO  : 'fpga -state' command is executed.
+21:16:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:16:25 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+21:16:25 INFO  : 'jtag frequency' command is executed.
+21:16:25 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:16:26 INFO  : Context for processor 'microblaze_0' is selected.
+21:16:26 INFO  : Processor reset is completed for 'microblaze_0'.
+21:16:26 INFO  : Context for processor 'microblaze_0' is selected.
+21:16:26 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+21:16:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+21:16:26 INFO  : Memory regions updated for context PA
+21:16:26 INFO  : Memory regions updated for context PA
+21:16:27 INFO  : Context for processor 'microblaze_0' is selected.
+21:16:27 INFO  : 'con' command is executed.
+21:16:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+21:16:27 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+21:16:43 INFO  : Disconnected from the channel tcfchan#141.
+21:16:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+21:16:44 INFO  : 'fpga -state' command is executed.
+21:16:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:16:44 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+21:16:45 INFO  : 'jtag frequency' command is executed.
+21:16:45 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:16:45 INFO  : Context for processor 'microblaze_0' is selected.
+21:16:45 INFO  : Processor reset is completed for 'microblaze_0'.
+21:16:45 INFO  : Context for processor 'microblaze_0' is selected.
+21:16:45 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+21:16:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+21:16:46 INFO  : Memory regions updated for context PA
+21:16:46 INFO  : Memory regions updated for context PA
+21:16:46 INFO  : Context for processor 'microblaze_0' is selected.
+21:16:46 INFO  : 'con' command is executed.
+21:16:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+21:16:46 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+21:17:11 INFO  : Disconnected from the channel tcfchan#142.
+21:17:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+21:17:13 INFO  : 'fpga -state' command is executed.
+21:17:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:17:13 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+21:17:13 INFO  : 'jtag frequency' command is executed.
+21:17:13 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:17:13 INFO  : Context for processor 'microblaze_0' is selected.
+21:17:13 INFO  : Processor reset is completed for 'microblaze_0'.
+21:17:13 INFO  : Context for processor 'microblaze_0' is selected.
+21:17:13 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+21:17:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+21:17:14 INFO  : Memory regions updated for context PA
+21:17:14 INFO  : Memory regions updated for context PA
+21:17:14 INFO  : Context for processor 'microblaze_0' is selected.
+21:17:14 INFO  : 'con' command is executed.
+21:17:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+21:17:14 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+21:17:24 INFO  : Disconnected from the channel tcfchan#143.
+21:17:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+21:17:26 INFO  : 'fpga -state' command is executed.
+21:17:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:17:26 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+21:17:26 INFO  : 'jtag frequency' command is executed.
+21:17:26 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:17:26 INFO  : Context for processor 'microblaze_0' is selected.
+21:17:26 INFO  : Processor reset is completed for 'microblaze_0'.
+21:17:27 INFO  : Context for processor 'microblaze_0' is selected.
+21:17:27 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+21:17:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+21:17:27 INFO  : Memory regions updated for context PA
+21:17:27 INFO  : Memory regions updated for context PA
+21:17:27 INFO  : Context for processor 'microblaze_0' is selected.
+21:17:27 INFO  : 'con' command is executed.
+21:17:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+21:17:27 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+21:18:16 INFO  : Disconnected from the channel tcfchan#144.
+21:18:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+21:18:17 INFO  : 'fpga -state' command is executed.
+21:18:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:18:17 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+21:18:17 INFO  : 'jtag frequency' command is executed.
+21:18:17 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:18:17 INFO  : Context for processor 'microblaze_0' is selected.
+21:18:18 INFO  : Processor reset is completed for 'microblaze_0'.
+21:18:18 INFO  : Context for processor 'microblaze_0' is selected.
+21:18:18 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+21:18:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+21:18:18 INFO  : Memory regions updated for context PA
+21:18:18 INFO  : Memory regions updated for context PA
+21:18:18 INFO  : Context for processor 'microblaze_0' is selected.
+21:18:18 INFO  : 'con' command is executed.
+21:18:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+21:18:18 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+21:18:35 INFO  : Disconnected from the channel tcfchan#145.
+21:18:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+21:18:37 INFO  : 'fpga -state' command is executed.
+21:18:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:18:37 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+21:18:37 INFO  : 'jtag frequency' command is executed.
+21:18:37 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:18:37 INFO  : Context for processor 'microblaze_0' is selected.
+21:18:37 INFO  : Processor reset is completed for 'microblaze_0'.
+21:18:37 INFO  : Context for processor 'microblaze_0' is selected.
+21:18:38 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+21:18:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+21:18:38 INFO  : Memory regions updated for context PA
+21:18:38 INFO  : Memory regions updated for context PA
+21:18:38 INFO  : Context for processor 'microblaze_0' is selected.
+21:18:38 INFO  : 'con' command is executed.
+21:18:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+21:18:38 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+21:18:57 INFO  : Disconnected from the channel tcfchan#146.
+21:19:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+21:19:11 INFO  : 'fpga -state' command is executed.
+21:19:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:19:11 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+21:19:11 INFO  : 'jtag frequency' command is executed.
+21:19:11 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:19:11 INFO  : Context for processor 'microblaze_0' is selected.
+21:19:11 INFO  : Processor reset is completed for 'microblaze_0'.
+21:19:11 INFO  : Context for processor 'microblaze_0' is selected.
+21:19:12 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+21:19:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+21:19:12 INFO  : Memory regions updated for context PA
+21:19:12 INFO  : Memory regions updated for context PA
+21:19:12 INFO  : Context for processor 'microblaze_0' is selected.
+21:19:12 INFO  : 'con' command is executed.
+21:19:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+21:19:12 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+21:34:10 INFO  : Disconnected from the channel tcfchan#147.
+21:34:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+21:34:11 INFO  : 'fpga -state' command is executed.
+21:34:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:34:11 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+21:34:11 INFO  : 'jtag frequency' command is executed.
+21:34:11 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:34:11 INFO  : Context for processor 'microblaze_0' is selected.
+21:34:12 INFO  : Processor reset is completed for 'microblaze_0'.
+21:34:12 INFO  : Context for processor 'microblaze_0' is selected.
+21:34:12 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+21:34:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+21:34:12 INFO  : Memory regions updated for context PA
+21:34:12 INFO  : Memory regions updated for context PA
+21:34:13 INFO  : Context for processor 'microblaze_0' is selected.
+21:34:13 INFO  : 'con' command is executed.
+21:34:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+21:34:13 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+21:35:07 INFO  : Disconnected from the channel tcfchan#148.
+21:35:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+21:35:12 INFO  : 'fpga -state' command is executed.
+21:35:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:35:12 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+21:35:12 INFO  : 'jtag frequency' command is executed.
+21:35:12 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:35:12 INFO  : Context for processor 'microblaze_0' is selected.
+21:35:12 INFO  : Processor reset is completed for 'microblaze_0'.
+21:35:12 INFO  : Context for processor 'microblaze_0' is selected.
+21:35:13 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+21:35:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+21:35:13 INFO  : Memory regions updated for context PA
+21:35:13 INFO  : Memory regions updated for context PA
+21:35:13 INFO  : Context for processor 'microblaze_0' is selected.
+21:35:13 INFO  : 'con' command is executed.
+21:35:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+21:35:13 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+21:35:21 INFO  : Disconnected from the channel tcfchan#149.
+21:35:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+21:35:23 INFO  : 'fpga -state' command is executed.
+21:35:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:35:23 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+21:35:23 INFO  : 'jtag frequency' command is executed.
+21:35:23 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:35:23 INFO  : Context for processor 'microblaze_0' is selected.
+21:35:23 INFO  : Processor reset is completed for 'microblaze_0'.
+21:35:23 INFO  : Context for processor 'microblaze_0' is selected.
+21:35:24 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+21:35:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+21:35:24 INFO  : Memory regions updated for context PA
+21:35:24 INFO  : Memory regions updated for context PA
+21:35:24 INFO  : Context for processor 'microblaze_0' is selected.
+21:35:24 INFO  : 'con' command is executed.
+21:35:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+21:35:24 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+21:47:28 INFO  : Disconnected from the channel tcfchan#150.
+21:47:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+21:47:29 INFO  : 'fpga -state' command is executed.
+21:47:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:47:30 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+21:47:30 INFO  : 'jtag frequency' command is executed.
+21:47:30 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:47:30 INFO  : Context for processor 'microblaze_0' is selected.
+21:47:30 INFO  : Processor reset is completed for 'microblaze_0'.
+21:47:30 INFO  : Context for processor 'microblaze_0' is selected.
+21:47:30 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+21:47:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+21:47:31 INFO  : Memory regions updated for context PA
+21:47:31 INFO  : Memory regions updated for context PA
+21:47:31 INFO  : Context for processor 'microblaze_0' is selected.
+21:47:31 INFO  : 'con' command is executed.
+21:47:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+21:47:31 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+21:49:04 INFO  : Disconnected from the channel tcfchan#151.
+21:49:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+21:49:18 INFO  : 'fpga -state' command is executed.
+21:49:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:49:18 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+21:49:18 INFO  : 'jtag frequency' command is executed.
+21:49:18 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:49:18 INFO  : Context for processor 'microblaze_0' is selected.
+21:49:18 INFO  : Processor reset is completed for 'microblaze_0'.
+21:49:18 INFO  : Context for processor 'microblaze_0' is selected.
+21:49:19 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+21:49:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+21:49:19 INFO  : Memory regions updated for context PA
+21:49:19 INFO  : Memory regions updated for context PA
+21:49:19 INFO  : Context for processor 'microblaze_0' is selected.
+21:49:19 INFO  : 'con' command is executed.
+21:49:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+21:49:19 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+21:50:11 INFO  : Disconnected from the channel tcfchan#152.
+21:50:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+21:50:25 INFO  : 'fpga -state' command is executed.
+21:50:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:50:25 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+21:50:25 INFO  : 'jtag frequency' command is executed.
+21:50:25 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:50:25 INFO  : Context for processor 'microblaze_0' is selected.
+21:50:25 INFO  : Processor reset is completed for 'microblaze_0'.
+21:50:25 INFO  : Context for processor 'microblaze_0' is selected.
+21:50:26 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+21:50:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+21:50:26 INFO  : Memory regions updated for context PA
+21:50:26 INFO  : Memory regions updated for context PA
+21:50:26 INFO  : Context for processor 'microblaze_0' is selected.
+21:50:26 INFO  : 'con' command is executed.
+21:50:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+21:50:26 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+21:51:10 INFO  : Disconnected from the channel tcfchan#153.
+21:51:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+21:51:12 INFO  : 'fpga -state' command is executed.
+21:51:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:51:12 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+21:51:12 INFO  : 'jtag frequency' command is executed.
+21:51:12 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:51:12 INFO  : Context for processor 'microblaze_0' is selected.
+21:51:12 INFO  : Processor reset is completed for 'microblaze_0'.
+21:51:12 INFO  : Context for processor 'microblaze_0' is selected.
+21:51:12 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+21:51:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+21:51:13 INFO  : Memory regions updated for context PA
+21:51:13 INFO  : Memory regions updated for context PA
+21:51:13 INFO  : Context for processor 'microblaze_0' is selected.
+21:51:13 INFO  : 'con' command is executed.
+21:51:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+21:51:13 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+21:53:52 INFO  : Disconnected from the channel tcfchan#154.
+21:54:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+21:54:09 INFO  : 'fpga -state' command is executed.
+21:54:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:54:09 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+21:54:09 INFO  : 'jtag frequency' command is executed.
+21:54:09 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:54:09 INFO  : Context for processor 'microblaze_0' is selected.
+21:54:09 INFO  : Processor reset is completed for 'microblaze_0'.
+21:54:09 INFO  : Context for processor 'microblaze_0' is selected.
+21:54:10 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+21:54:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+21:54:10 INFO  : Memory regions updated for context PA
+21:54:10 INFO  : Memory regions updated for context PA
+21:54:10 INFO  : Context for processor 'microblaze_0' is selected.
+21:54:10 INFO  : 'con' command is executed.
+21:54:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+21:54:10 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+21:57:43 INFO  : Disconnected from the channel tcfchan#155.
+21:57:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+21:57:45 INFO  : 'fpga -state' command is executed.
+21:57:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:57:45 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+21:57:45 INFO  : 'jtag frequency' command is executed.
+21:57:45 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:57:45 INFO  : Context for processor 'microblaze_0' is selected.
+21:57:45 INFO  : Processor reset is completed for 'microblaze_0'.
+21:57:45 INFO  : Context for processor 'microblaze_0' is selected.
+21:57:46 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+21:57:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+21:57:46 INFO  : Memory regions updated for context PA
+21:57:46 INFO  : Memory regions updated for context PA
+21:57:46 INFO  : Context for processor 'microblaze_0' is selected.
+21:57:46 INFO  : 'con' command is executed.
+21:57:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+21:57:46 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+21:58:28 INFO  : Disconnected from the channel tcfchan#156.
+21:58:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+21:58:50 INFO  : 'fpga -state' command is executed.
+21:58:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:58:50 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+21:58:50 INFO  : 'jtag frequency' command is executed.
+21:58:50 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:58:50 INFO  : Context for processor 'microblaze_0' is selected.
+21:58:50 INFO  : Processor reset is completed for 'microblaze_0'.
+21:58:51 INFO  : Context for processor 'microblaze_0' is selected.
+21:58:51 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+21:58:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+21:58:51 INFO  : Memory regions updated for context PA
+21:58:51 INFO  : Memory regions updated for context PA
+21:58:51 INFO  : Context for processor 'microblaze_0' is selected.
+21:58:51 INFO  : 'con' command is executed.
+21:58:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+21:58:51 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+21:59:02 INFO  : Disconnected from the channel tcfchan#157.
+21:59:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+21:59:03 INFO  : 'fpga -state' command is executed.
+21:59:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:59:03 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+21:59:04 INFO  : 'jtag frequency' command is executed.
+21:59:04 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:59:04 INFO  : Context for processor 'microblaze_0' is selected.
+21:59:04 INFO  : Processor reset is completed for 'microblaze_0'.
+21:59:04 INFO  : Context for processor 'microblaze_0' is selected.
+21:59:04 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+21:59:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+21:59:05 INFO  : Memory regions updated for context PA
+21:59:05 INFO  : Memory regions updated for context PA
+21:59:05 INFO  : Context for processor 'microblaze_0' is selected.
+21:59:05 INFO  : 'con' command is executed.
+21:59:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+21:59:05 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+21:59:40 INFO  : Disconnected from the channel tcfchan#158.
+21:59:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+21:59:42 INFO  : 'fpga -state' command is executed.
+21:59:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:59:42 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+21:59:42 INFO  : 'jtag frequency' command is executed.
+21:59:42 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:59:42 INFO  : Context for processor 'microblaze_0' is selected.
+21:59:42 INFO  : Processor reset is completed for 'microblaze_0'.
+21:59:43 INFO  : Context for processor 'microblaze_0' is selected.
+21:59:43 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+21:59:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+21:59:43 INFO  : Memory regions updated for context PA
+21:59:43 INFO  : Memory regions updated for context PA
+21:59:43 INFO  : Context for processor 'microblaze_0' is selected.
+21:59:43 INFO  : 'con' command is executed.
+21:59:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+21:59:43 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+21:59:53 INFO  : Disconnected from the channel tcfchan#159.
+22:00:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+22:00:07 INFO  : 'fpga -state' command is executed.
+22:00:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:00:07 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+22:00:07 INFO  : 'jtag frequency' command is executed.
+22:00:07 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:00:07 INFO  : Context for processor 'microblaze_0' is selected.
+22:00:08 INFO  : Processor reset is completed for 'microblaze_0'.
+22:00:08 INFO  : Context for processor 'microblaze_0' is selected.
+22:00:08 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+22:00:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+22:00:08 INFO  : Memory regions updated for context PA
+22:00:08 INFO  : Memory regions updated for context PA
+22:00:08 INFO  : Context for processor 'microblaze_0' is selected.
+22:00:08 INFO  : 'con' command is executed.
+22:00:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+22:00:08 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+22:00:42 INFO  : Disconnected from the channel tcfchan#160.
+22:00:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+22:00:57 INFO  : 'fpga -state' command is executed.
+22:00:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:00:57 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+22:00:57 INFO  : 'jtag frequency' command is executed.
+22:00:57 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:00:57 INFO  : Context for processor 'microblaze_0' is selected.
+22:00:57 INFO  : Processor reset is completed for 'microblaze_0'.
+22:00:57 INFO  : Context for processor 'microblaze_0' is selected.
+22:00:57 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+22:00:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+22:00:58 INFO  : Memory regions updated for context PA
+22:00:58 INFO  : Memory regions updated for context PA
+22:00:58 INFO  : Context for processor 'microblaze_0' is selected.
+22:00:58 INFO  : 'con' command is executed.
+22:00:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+22:00:58 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+22:04:19 INFO  : Disconnected from the channel tcfchan#161.
+22:04:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+22:04:20 INFO  : 'fpga -state' command is executed.
+22:04:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:04:21 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+22:04:21 INFO  : 'jtag frequency' command is executed.
+22:04:21 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:04:21 INFO  : Context for processor 'microblaze_0' is selected.
+22:04:21 INFO  : Processor reset is completed for 'microblaze_0'.
+22:04:21 INFO  : Context for processor 'microblaze_0' is selected.
+22:04:21 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+22:04:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+22:04:22 INFO  : Memory regions updated for context PA
+22:04:22 INFO  : Memory regions updated for context PA
+22:04:22 INFO  : Context for processor 'microblaze_0' is selected.
+22:04:22 INFO  : 'con' command is executed.
+22:04:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+22:04:22 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+22:05:21 INFO  : Disconnected from the channel tcfchan#162.
+22:05:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+22:05:23 INFO  : 'fpga -state' command is executed.
+22:05:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:05:23 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+22:05:23 INFO  : 'jtag frequency' command is executed.
+22:05:23 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:05:23 INFO  : Context for processor 'microblaze_0' is selected.
+22:05:23 INFO  : Processor reset is completed for 'microblaze_0'.
+22:05:23 INFO  : Context for processor 'microblaze_0' is selected.
+22:05:23 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+22:05:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+22:05:24 INFO  : Memory regions updated for context PA
+22:05:24 INFO  : Memory regions updated for context PA
+22:05:24 INFO  : Context for processor 'microblaze_0' is selected.
+22:05:24 INFO  : 'con' command is executed.
+22:05:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+22:05:24 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+22:08:14 INFO  : Disconnected from the channel tcfchan#163.
+22:08:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+22:08:28 INFO  : 'fpga -state' command is executed.
+22:08:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:08:28 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+22:08:28 INFO  : 'jtag frequency' command is executed.
+22:08:29 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:08:29 INFO  : Context for processor 'microblaze_0' is selected.
+22:08:29 INFO  : Processor reset is completed for 'microblaze_0'.
+22:08:29 INFO  : Context for processor 'microblaze_0' is selected.
+22:08:29 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+22:08:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+22:08:29 INFO  : Memory regions updated for context PA
+22:08:29 INFO  : Memory regions updated for context PA
+22:08:30 INFO  : Context for processor 'microblaze_0' is selected.
+22:08:30 INFO  : 'con' command is executed.
+22:08:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+22:08:30 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+22:09:29 INFO  : Disconnected from the channel tcfchan#164.
+22:09:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+22:09:51 INFO  : 'fpga -state' command is executed.
+22:09:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:09:51 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+22:09:51 INFO  : 'jtag frequency' command is executed.
+22:09:51 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:09:51 INFO  : Context for processor 'microblaze_0' is selected.
+22:09:51 INFO  : Processor reset is completed for 'microblaze_0'.
+22:09:51 INFO  : Context for processor 'microblaze_0' is selected.
+22:09:52 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+22:09:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+22:09:52 INFO  : Memory regions updated for context PA
+22:09:52 INFO  : Memory regions updated for context PA
+22:09:52 INFO  : Context for processor 'microblaze_0' is selected.
+22:09:52 INFO  : 'con' command is executed.
+22:09:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+22:09:52 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+22:11:27 INFO  : Disconnected from the channel tcfchan#165.
+22:11:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+22:11:40 INFO  : 'fpga -state' command is executed.
+22:11:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:11:40 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+22:11:40 INFO  : 'jtag frequency' command is executed.
+22:11:41 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:11:41 INFO  : Context for processor 'microblaze_0' is selected.
+22:11:41 INFO  : Processor reset is completed for 'microblaze_0'.
+22:11:41 INFO  : Context for processor 'microblaze_0' is selected.
+22:11:41 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+22:11:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+22:11:42 INFO  : Memory regions updated for context PA
+22:11:42 INFO  : Memory regions updated for context PA
+22:11:42 INFO  : Context for processor 'microblaze_0' is selected.
+22:11:42 INFO  : 'con' command is executed.
+22:11:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+22:11:42 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+22:13:18 INFO  : Disconnected from the channel tcfchan#166.
+22:13:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+22:13:31 INFO  : 'fpga -state' command is executed.
+22:13:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:13:31 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+22:13:31 INFO  : 'jtag frequency' command is executed.
+22:13:31 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:13:32 INFO  : Context for processor 'microblaze_0' is selected.
+22:13:32 INFO  : Processor reset is completed for 'microblaze_0'.
+22:13:32 INFO  : Context for processor 'microblaze_0' is selected.
+22:13:32 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+22:13:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+22:13:32 INFO  : Memory regions updated for context PA
+22:13:32 INFO  : Memory regions updated for context PA
+22:13:32 INFO  : Context for processor 'microblaze_0' is selected.
+22:13:33 INFO  : 'con' command is executed.
+22:13:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+22:13:33 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+22:16:29 INFO  : Disconnected from the channel tcfchan#167.
+22:16:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+22:16:43 INFO  : 'fpga -state' command is executed.
+22:16:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:16:43 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+22:16:43 INFO  : 'jtag frequency' command is executed.
+22:16:44 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:16:44 INFO  : Context for processor 'microblaze_0' is selected.
+22:16:44 INFO  : Processor reset is completed for 'microblaze_0'.
+22:16:44 INFO  : Context for processor 'microblaze_0' is selected.
+22:16:44 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+22:16:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+22:16:44 INFO  : Memory regions updated for context PA
+22:16:44 INFO  : Memory regions updated for context PA
+22:16:45 INFO  : Context for processor 'microblaze_0' is selected.
+22:16:45 INFO  : 'con' command is executed.
+22:16:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+22:16:45 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+22:18:21 INFO  : Disconnected from the channel tcfchan#168.
+22:18:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+22:18:37 INFO  : 'fpga -state' command is executed.
+22:18:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:18:37 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+22:18:37 INFO  : 'jtag frequency' command is executed.
+22:18:37 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:18:37 INFO  : Context for processor 'microblaze_0' is selected.
+22:18:37 INFO  : Processor reset is completed for 'microblaze_0'.
+22:18:37 INFO  : Context for processor 'microblaze_0' is selected.
+22:18:38 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+22:18:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+22:18:38 INFO  : Memory regions updated for context PA
+22:18:38 INFO  : Memory regions updated for context PA
+22:18:38 INFO  : Context for processor 'microblaze_0' is selected.
+22:18:38 INFO  : 'con' command is executed.
+22:18:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+22:18:38 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+22:20:43 INFO  : Disconnected from the channel tcfchan#169.
+22:20:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+22:20:44 INFO  : 'fpga -state' command is executed.
+22:20:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:20:44 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+22:20:44 INFO  : 'jtag frequency' command is executed.
+22:20:44 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:20:44 INFO  : Context for processor 'microblaze_0' is selected.
+22:20:45 INFO  : Processor reset is completed for 'microblaze_0'.
+22:20:45 INFO  : Context for processor 'microblaze_0' is selected.
+22:20:45 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+22:20:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+22:20:45 INFO  : Memory regions updated for context PA
+22:20:45 INFO  : Memory regions updated for context PA
+22:20:45 INFO  : Context for processor 'microblaze_0' is selected.
+22:20:46 INFO  : 'con' command is executed.
+22:20:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+22:20:46 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+22:23:40 INFO  : Disconnected from the channel tcfchan#170.
+22:23:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+22:23:41 INFO  : 'fpga -state' command is executed.
+22:23:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:23:42 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+22:23:42 INFO  : 'jtag frequency' command is executed.
+22:23:42 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:23:42 INFO  : Context for processor 'microblaze_0' is selected.
+22:23:42 INFO  : Processor reset is completed for 'microblaze_0'.
+22:23:42 INFO  : Context for processor 'microblaze_0' is selected.
+22:23:42 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+22:23:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+22:23:43 INFO  : Memory regions updated for context PA
+22:23:43 INFO  : Memory regions updated for context PA
+22:23:43 INFO  : Context for processor 'microblaze_0' is selected.
+22:23:43 INFO  : 'con' command is executed.
+22:23:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+22:23:43 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+22:24:34 INFO  : Disconnected from the channel tcfchan#171.
+22:24:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+22:24:36 INFO  : 'fpga -state' command is executed.
+22:24:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:24:36 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+22:24:36 INFO  : 'jtag frequency' command is executed.
+22:24:36 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:24:36 INFO  : Context for processor 'microblaze_0' is selected.
+22:24:37 INFO  : Processor reset is completed for 'microblaze_0'.
+22:24:37 INFO  : Context for processor 'microblaze_0' is selected.
+22:24:37 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+22:24:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+22:24:37 INFO  : Memory regions updated for context PA
+22:24:37 INFO  : Memory regions updated for context PA
+22:24:37 INFO  : Context for processor 'microblaze_0' is selected.
+22:24:37 INFO  : 'con' command is executed.
+22:24:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+22:24:37 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+22:26:16 INFO  : Disconnected from the channel tcfchan#172.
+22:26:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+22:26:29 INFO  : 'fpga -state' command is executed.
+22:26:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:26:29 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+22:26:30 INFO  : 'jtag frequency' command is executed.
+22:26:30 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:26:30 INFO  : Context for processor 'microblaze_0' is selected.
+22:26:30 INFO  : Processor reset is completed for 'microblaze_0'.
+22:26:30 INFO  : Context for processor 'microblaze_0' is selected.
+22:26:30 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+22:26:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+22:26:31 INFO  : Memory regions updated for context PA
+22:26:31 INFO  : Memory regions updated for context PA
+22:26:31 INFO  : Context for processor 'microblaze_0' is selected.
+22:26:31 INFO  : 'con' command is executed.
+22:26:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+22:26:31 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+22:26:43 INFO  : Disconnected from the channel tcfchan#173.
+22:26:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+22:26:58 INFO  : 'fpga -state' command is executed.
+22:26:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:26:58 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+22:26:58 INFO  : 'jtag frequency' command is executed.
+22:26:58 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:26:58 INFO  : Context for processor 'microblaze_0' is selected.
+22:26:58 INFO  : Processor reset is completed for 'microblaze_0'.
+22:26:58 INFO  : Context for processor 'microblaze_0' is selected.
+22:26:58 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+22:26:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+22:26:59 INFO  : Memory regions updated for context PA
+22:26:59 INFO  : Memory regions updated for context PA
+22:26:59 INFO  : Context for processor 'microblaze_0' is selected.
+22:26:59 INFO  : 'con' command is executed.
+22:26:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+22:26:59 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+22:29:22 INFO  : Disconnected from the channel tcfchan#174.
+22:29:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+22:29:24 INFO  : 'fpga -state' command is executed.
+22:29:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:29:24 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+22:29:24 INFO  : 'jtag frequency' command is executed.
+22:29:24 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:29:24 INFO  : Context for processor 'microblaze_0' is selected.
+22:29:24 INFO  : Processor reset is completed for 'microblaze_0'.
+22:29:24 INFO  : Context for processor 'microblaze_0' is selected.
+22:29:25 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+22:29:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+22:29:25 INFO  : Memory regions updated for context PA
+22:29:25 INFO  : Memory regions updated for context PA
+22:29:25 INFO  : Context for processor 'microblaze_0' is selected.
+22:29:25 INFO  : 'con' command is executed.
+22:29:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+22:29:25 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+22:40:44 INFO  : Disconnected from the channel tcfchan#175.
+22:40:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+22:40:45 INFO  : 'fpga -state' command is executed.
+22:40:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:40:45 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+22:40:45 INFO  : 'jtag frequency' command is executed.
+22:40:45 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:40:46 INFO  : Context for processor 'microblaze_0' is selected.
+22:40:46 INFO  : Processor reset is completed for 'microblaze_0'.
+22:40:46 INFO  : Context for processor 'microblaze_0' is selected.
+22:40:46 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+22:40:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+22:40:46 INFO  : Memory regions updated for context PA
+22:40:46 INFO  : Memory regions updated for context PA
+22:40:47 INFO  : Context for processor 'microblaze_0' is selected.
+22:40:47 INFO  : 'con' command is executed.
+22:40:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+22:40:47 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+22:43:02 INFO  : Disconnected from the channel tcfchan#176.
+22:49:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+22:49:32 INFO  : 'fpga -state' command is executed.
+22:49:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:49:32 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+22:49:32 INFO  : 'jtag frequency' command is executed.
+22:49:32 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:49:33 INFO  : Context for processor 'microblaze_0' is selected.
+22:49:33 INFO  : Processor reset is completed for 'microblaze_0'.
+22:49:33 INFO  : Context for processor 'microblaze_0' is selected.
+22:49:33 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+22:49:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+22:49:33 INFO  : Memory regions updated for context PA
+22:49:33 INFO  : Memory regions updated for context PA
+22:49:34 INFO  : Context for processor 'microblaze_0' is selected.
+22:49:34 INFO  : 'con' command is executed.
+22:49:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+22:49:34 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+22:50:53 INFO  : Disconnected from the channel tcfchan#177.
+22:51:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+22:51:07 INFO  : 'fpga -state' command is executed.
+22:51:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:51:07 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+22:51:07 INFO  : 'jtag frequency' command is executed.
+22:51:07 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:51:07 INFO  : Context for processor 'microblaze_0' is selected.
+22:51:07 INFO  : Processor reset is completed for 'microblaze_0'.
+22:51:07 INFO  : Context for processor 'microblaze_0' is selected.
+22:51:08 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+22:51:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+22:51:08 INFO  : Memory regions updated for context PA
+22:51:08 INFO  : Memory regions updated for context PA
+22:51:08 INFO  : Context for processor 'microblaze_0' is selected.
+22:51:08 INFO  : 'con' command is executed.
+22:51:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+22:51:08 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+22:51:46 INFO  : Disconnected from the channel tcfchan#178.
+22:52:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+22:52:01 INFO  : 'fpga -state' command is executed.
+22:52:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:52:01 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+22:52:01 INFO  : 'jtag frequency' command is executed.
+22:52:01 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:52:01 INFO  : Context for processor 'microblaze_0' is selected.
+22:52:02 INFO  : Processor reset is completed for 'microblaze_0'.
+22:52:02 INFO  : Context for processor 'microblaze_0' is selected.
+22:52:02 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+22:52:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+22:52:02 INFO  : Memory regions updated for context PA
+22:52:02 INFO  : Memory regions updated for context PA
+22:52:02 INFO  : Context for processor 'microblaze_0' is selected.
+22:52:02 INFO  : 'con' command is executed.
+22:52:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+22:52:02 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+23:19:30 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1548717220000,  Project:1548537348000
+23:19:30 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /root/Development/microblaze_uart/microblaze_uart.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+23:19:30 INFO  : Copied contents of /root/Development/microblaze_uart/microblaze_uart.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+23:19:31 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+23:19:33 INFO  : 
+23:19:34 INFO  : Updating hardware inferred compiler options for uart_interrupts.
+23:19:34 INFO  : Clearing existing target manager status.
+23:19:34 INFO  : Closing and re-opening the MSS file of ther project uart_interrupts_bsp
+23:19:35 INFO  : Closing and re-opening the MSS file of ther project uart_interrupts_bsp
+23:19:35 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+23:19:36 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+23:19:48 INFO  : Disconnected from the channel tcfchan#179.
+23:20:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:20:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+23:20:27 INFO  : FPGA configured successfully with bitstream "/root/Development/microblaze_uart/microblaze_uart.sdk/design_1_wrapper_hw_platform_0/download.bit"
+23:20:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+23:20:30 INFO  : 'fpga -state' command is executed.
+23:20:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:20:30 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+23:20:30 INFO  : 'jtag frequency' command is executed.
+23:20:30 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:20:30 INFO  : Context for processor 'microblaze_0' is selected.
+23:20:30 INFO  : Processor reset is completed for 'microblaze_0'.
+23:20:31 INFO  : Context for processor 'microblaze_0' is selected.
+23:20:31 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+23:20:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+23:20:31 INFO  : Memory regions updated for context PA
+23:20:31 INFO  : Memory regions updated for context PA
+23:20:31 INFO  : Context for processor 'microblaze_0' is selected.
+23:20:31 INFO  : 'con' command is executed.
+23:20:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+23:20:31 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+23:21:21 INFO  : Disconnected from the channel tcfchan#180.
+23:21:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+23:21:36 INFO  : 'fpga -state' command is executed.
+23:21:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:21:36 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+23:21:36 INFO  : 'jtag frequency' command is executed.
+23:21:36 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:21:36 INFO  : Context for processor 'microblaze_0' is selected.
+23:21:36 INFO  : Processor reset is completed for 'microblaze_0'.
+23:21:36 INFO  : Context for processor 'microblaze_0' is selected.
+23:21:37 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+23:21:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+23:21:37 INFO  : Memory regions updated for context PA
+23:21:37 INFO  : Memory regions updated for context PA
+23:21:37 INFO  : Context for processor 'microblaze_0' is selected.
+23:21:37 INFO  : 'con' command is executed.
+23:21:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+23:21:37 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+23:32:35 INFO  : Disconnected from the channel tcfchan#181.
+23:37:52 INFO  : Registering command handlers for SDK TCF services
+23:37:53 INFO  : Launching XSCT server: xsct -n -interactive /root/Development/microblaze_uart/microblaze_uart.sdk/temp_xsdb_launch_script.tcl
+23:37:56 INFO  : XSCT server has started successfully.
+23:37:57 INFO  : Successfully done setting XSCT server connection channel  
+23:37:57 INFO  : Processing command line option -hwspec /root/Development/microblaze_uart/microblaze_uart.sdk/design_1_wrapper.hdf.
+23:37:57 INFO  : Successfully done setting SDK workspace  
+23:37:57 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+23:37:59 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1548718620000,  Project:1548717220000
+23:37:59 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from /root/Development/microblaze_uart/microblaze_uart.sdk/design_1_wrapper.hdf.
+23:37:59 INFO  : Copied contents of /root/Development/microblaze_uart/microblaze_uart.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+23:37:59 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+23:38:00 INFO  : 
+23:38:01 INFO  : Updating hardware inferred compiler options for uart_interrupts.
+23:38:01 INFO  : Clearing existing target manager status.
+23:40:36 ERROR : Failed to connect to hardware server on host '127.0.0.1' and port '3121'.
+java.io.IOException: Command [C 24 xsdb eval "connect -url tcp:127.0.0.1:3121"] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:838)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: Communication channel is closed by remote peer
+	at org.eclipse.tcf.core.AbstractChannel$1$2.run(AbstractChannel.java:381)
+	... 2 more
+23:40:36 ERROR : (XSDB Server)Terminated
+
+23:45:55 INFO  : Registering command handlers for SDK TCF services
+23:45:56 INFO  : Launching XSCT server: xsct -n -interactive /root/Development/microblaze_uart/microblaze_uart.sdk/temp_xsdb_launch_script.tcl
+23:45:59 INFO  : XSCT server has started successfully.
+23:46:00 INFO  : Successfully done setting XSCT server connection channel  
+23:46:00 INFO  : Successfully done setting SDK workspace  
+23:46:00 INFO  : Processing command line option -hwspec /root/Development/microblaze_uart/microblaze_uart.sdk/design_1_wrapper.hdf.
+23:46:00 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+23:48:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:48:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+23:48:38 INFO  : FPGA configured successfully with bitstream "/root/Development/microblaze_uart/microblaze_uart.sdk/design_1_wrapper_hw_platform_0/download.bit"
+23:49:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+23:49:35 INFO  : 'fpga -state' command is executed.
+23:49:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:49:36 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+23:49:36 INFO  : 'jtag frequency' command is executed.
+23:49:36 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:49:36 INFO  : Context for processor 'microblaze_0' is selected.
+23:49:36 INFO  : Processor reset is completed for 'microblaze_0'.
+23:49:36 INFO  : Context for processor 'microblaze_0' is selected.
+23:49:36 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+23:49:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+23:49:37 INFO  : Memory regions updated for context PA
+23:49:37 INFO  : Memory regions updated for context PA
+23:49:37 INFO  : Context for processor 'microblaze_0' is selected.
+23:49:37 INFO  : 'con' command is executed.
+23:49:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+23:49:37 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+23:50:46 INFO  : Disconnected from the channel tcfchan#1.
+23:50:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+23:50:48 INFO  : 'fpga -state' command is executed.
+23:50:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:50:48 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+23:50:48 INFO  : 'jtag frequency' command is executed.
+23:50:48 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+23:50:48 INFO  : Context for processor 'microblaze_0' is selected.
+23:50:48 INFO  : Processor reset is completed for 'microblaze_0'.
+23:50:48 INFO  : Context for processor 'microblaze_0' is selected.
+23:50:49 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+23:50:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+23:50:49 INFO  : Memory regions updated for context PA
+23:50:49 INFO  : Memory regions updated for context PA
+23:50:49 INFO  : Context for processor 'microblaze_0' is selected.
+23:50:49 INFO  : 'con' command is executed.
+23:50:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+23:50:49 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+23:58:47 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1548719788000,  Project:1548718620000
+23:58:47 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /root/Development/microblaze_uart/microblaze_uart.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+23:58:48 INFO  : Copied contents of /root/Development/microblaze_uart/microblaze_uart.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+23:58:48 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+23:58:50 INFO  : 
+23:58:50 INFO  : Updating hardware inferred compiler options for uart_interrupts.
+23:58:50 INFO  : Clearing existing target manager status.
+00:00:25 INFO  : Disconnected from the channel tcfchan#2.
+00:00:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+00:00:26 INFO  : 'fpga -state' command is executed.
+00:00:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:00:26 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+00:00:26 INFO  : 'jtag frequency' command is executed.
+00:00:27 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:00:27 INFO  : Context for processor 'microblaze_0' is selected.
+00:00:27 INFO  : Processor reset is completed for 'microblaze_0'.
+00:00:27 INFO  : Context for processor 'microblaze_0' is selected.
+00:00:27 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+00:00:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+00:00:28 INFO  : Memory regions updated for context PA
+00:00:28 INFO  : Memory regions updated for context PA
+00:00:28 INFO  : Context for processor 'microblaze_0' is selected.
+00:00:28 INFO  : 'con' command is executed.
+00:00:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+00:00:28 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+00:00:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:00:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+00:00:46 INFO  : FPGA configured successfully with bitstream "/root/Development/microblaze_uart/microblaze_uart.sdk/design_1_wrapper_hw_platform_0/download.bit"
+00:00:48 INFO  : Disconnected from the channel tcfchan#3.
+00:00:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+00:00:49 INFO  : 'fpga -state' command is executed.
+00:00:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:00:50 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+00:00:50 INFO  : 'jtag frequency' command is executed.
+00:00:50 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:00:50 INFO  : Context for processor 'microblaze_0' is selected.
+00:00:50 INFO  : Processor reset is completed for 'microblaze_0'.
+00:00:50 INFO  : Context for processor 'microblaze_0' is selected.
+00:00:50 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+00:00:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+00:00:51 INFO  : Memory regions updated for context PA
+00:00:51 INFO  : Memory regions updated for context PA
+00:00:51 INFO  : Context for processor 'microblaze_0' is selected.
+00:00:51 INFO  : 'con' command is executed.
+00:00:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+00:00:51 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'
+00:00:52 INFO  : Disconnected from the channel tcfchan#4.
+00:02:55 INFO  : Registering command handlers for SDK TCF services
+00:02:57 INFO  : Launching XSCT server: xsct -n -interactive /root/Development/microblaze_uart/microblaze_uart.sdk/temp_xsdb_launch_script.tcl
+00:02:59 INFO  : XSCT server has started successfully.
+00:03:00 INFO  : Successfully done setting XSCT server connection channel  
+00:03:00 INFO  : Successfully done setting SDK workspace  
+00:03:00 INFO  : Processing command line option -hwspec /root/Development/microblaze_uart/microblaze_uart.sdk/design_1_wrapper.hdf.
+00:03:00 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+00:03:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A7664EA" && level==0} -index 0' command is executed.
+00:03:31 INFO  : 'fpga -state' command is executed.
+00:03:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:03:31 INFO  : Jtag cable 'Digilent Arty 210319A7664EA' is selected.
+00:03:31 INFO  : 'jtag frequency' command is executed.
+00:03:31 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+00:03:31 INFO  : Context for processor 'microblaze_0' is selected.
+00:03:31 INFO  : Processor reset is completed for 'microblaze_0'.
+00:03:31 INFO  : Context for processor 'microblaze_0' is selected.
+00:03:31 INFO  : The application '/root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf' is downloaded to processor 'microblaze_0'.
+00:03:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+dow /root/Development/microblaze_uart/microblaze_uart.sdk/uart_interrupts/Debug/uart_interrupts.elf
+----------------End of Script----------------
+
+00:03:32 INFO  : Memory regions updated for context PA
+00:03:32 INFO  : Memory regions updated for context PA
+00:03:32 INFO  : Context for processor 'microblaze_0' is selected.
+00:03:32 INFO  : 'con' command is executed.
+00:03:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A7664EA"} -index 0
+con
+----------------End of Script----------------
+
+00:03:32 INFO  : Launch script is exported to file '/root/Development/microblaze_uart/microblaze_uart.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart_interrupts.elf_on_local.tcl'

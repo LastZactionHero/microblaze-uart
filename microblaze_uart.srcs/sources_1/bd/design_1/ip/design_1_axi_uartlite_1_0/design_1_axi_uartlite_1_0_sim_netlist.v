@@ -1,7 +1,7 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-// Date        : Sat Jan 26 20:57:54 2019
+// Date        : Mon Jan 28 23:08:23 2019
 // Host        : vivado running 64-bit unknown
 // Command     : write_verilog -force -mode funcsim
 //               /root/Development/microblaze_uart/microblaze_uart.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_1_0/design_1_axi_uartlite_1_0_sim_netlist.v
@@ -83,7 +83,7 @@ module design_1_axi_uartlite_1_0
   wire s_axi_wvalid;
   wire tx;
 
-  (* C_BAUDRATE = "9600" *) 
+  (* C_BAUDRATE = "115200" *) 
   (* C_DATA_BITS = "8" *) 
   (* C_FAMILY = "artix7" *) 
   (* C_ODD_PARITY = "0" *) 
@@ -772,7 +772,7 @@ module design_1_axi_uartlite_1_0_axi_lite_ipif
         .tx_Buffer_Full(tx_Buffer_Full));
 endmodule
 
-(* C_BAUDRATE = "9600" *) (* C_DATA_BITS = "8" *) (* C_FAMILY = "artix7" *) 
+(* C_BAUDRATE = "115200" *) (* C_DATA_BITS = "8" *) (* C_FAMILY = "artix7" *) 
 (* C_ODD_PARITY = "0" *) (* C_S_AXI_ACLK_FREQ_HZ = "166666666" *) (* C_S_AXI_ADDR_WIDTH = "4" *) 
 (* C_S_AXI_DATA_WIDTH = "32" *) (* C_USE_PARITY = "0" *) (* ORIG_REF_NAME = "axi_uartlite" *) 
 (* downgradeipidentifiedwarnings = "yes" *) 
@@ -977,23 +977,23 @@ module design_1_axi_uartlite_1_0_baudrate
 
   wire EN_16x_Baud;
   wire EN_16x_Baud_reg_0;
-  wire [10:0]count;
-  wire \count[10]_i_2_n_0 ;
-  wire \count[10]_i_3_n_0 ;
-  wire \count[7]_i_2_n_0 ;
-  wire [10:0]count_0;
+  wire [6:0]count;
+  wire \count[1]_i_2_n_0 ;
+  wire \count[2]_i_2_n_0 ;
+  wire \count[6]_i_2_n_0 ;
+  wire [6:0]count_0;
   wire [0:0]p_2_out;
   wire s_axi_aclk;
 
   (* SOFT_HLUTNM = "soft_lutpair13" *) 
   LUT5 #(
-    .INIT(32'h00000002)) 
+    .INIT(32'h00000001)) 
     EN_16x_Baud_i_1
-       (.I0(\count[10]_i_2_n_0 ),
-        .I1(\count[10]_i_3_n_0 ),
-        .I2(count[8]),
-        .I3(count[10]),
-        .I4(count[9]),
+       (.I0(count[6]),
+        .I1(count[4]),
+        .I2(count[3]),
+        .I3(count[5]),
+        .I4(\count[6]_i_2_n_0 ),
         .O(EN_16x_Baud));
   FDRE EN_16x_Baud_reg
        (.C(s_axi_aclk),
@@ -1001,148 +1001,99 @@ module design_1_axi_uartlite_1_0_baudrate
         .D(EN_16x_Baud),
         .Q(p_2_out),
         .R(EN_16x_Baud_reg_0));
-  LUT6 #(
-    .INIT(64'h5555555455555555)) 
+  (* SOFT_HLUTNM = "soft_lutpair16" *) 
+  LUT1 #(
+    .INIT(2'h1)) 
     \count[0]_i_1 
        (.I0(count[0]),
-        .I1(count[9]),
-        .I2(count[10]),
-        .I3(count[8]),
-        .I4(\count[10]_i_3_n_0 ),
-        .I5(\count[10]_i_2_n_0 ),
         .O(count_0[0]));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
-  LUT5 #(
-    .INIT(32'hAAAAA9AA)) 
-    \count[10]_i_1 
-       (.I0(count[10]),
-        .I1(count[9]),
-        .I2(count[8]),
-        .I3(\count[10]_i_2_n_0 ),
-        .I4(\count[10]_i_3_n_0 ),
-        .O(count_0[10]));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
   LUT4 #(
-    .INIT(16'h0001)) 
-    \count[10]_i_2 
-       (.I0(count[1]),
-        .I1(count[0]),
-        .I2(count[3]),
-        .I3(count[2]),
-        .O(\count[10]_i_2_n_0 ));
+    .INIT(16'hF00E)) 
+    \count[1]_i_1 
+       (.I0(\count[1]_i_2_n_0 ),
+        .I1(count[2]),
+        .I2(count[1]),
+        .I3(count[0]),
+        .O(count_0[1]));
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
   LUT4 #(
     .INIT(16'hFFFE)) 
-    \count[10]_i_3 
+    \count[1]_i_2 
        (.I0(count[5]),
-        .I1(count[4]),
-        .I2(count[7]),
+        .I1(count[3]),
+        .I2(count[4]),
         .I3(count[6]),
-        .O(\count[10]_i_3_n_0 ));
+        .O(\count[1]_i_2_n_0 ));
   LUT6 #(
-    .INIT(64'hFFFF00000000FFFE)) 
-    \count[1]_i_1 
-       (.I0(\count[7]_i_2_n_0 ),
-        .I1(\count[10]_i_3_n_0 ),
-        .I2(count[2]),
-        .I3(count[3]),
-        .I4(count[1]),
-        .I5(count[0]),
-        .O(count_0[1]));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
-  LUT3 #(
-    .INIT(8'hE1)) 
+    .INIT(64'h9999999999999998)) 
     \count[2]_i_1 
+       (.I0(\count[2]_i_2_n_0 ),
+        .I1(count[2]),
+        .I2(count[5]),
+        .I3(count[3]),
+        .I4(count[4]),
+        .I5(count[6]),
+        .O(count_0[2]));
+  (* SOFT_HLUTNM = "soft_lutpair16" *) 
+  LUT2 #(
+    .INIT(4'hE)) 
+    \count[2]_i_2 
        (.I0(count[0]),
         .I1(count[1]),
-        .I2(count[2]),
-        .O(count_0[2]));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
+        .O(\count[2]_i_2_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT4 #(
     .INIT(16'hAAA9)) 
     \count[3]_i_1 
        (.I0(count[3]),
-        .I1(count[0]),
-        .I2(count[1]),
+        .I1(count[1]),
+        .I2(count[0]),
         .I3(count[2]),
         .O(count_0[3]));
   (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT5 #(
-    .INIT(32'hAAAAAAA9)) 
+    .INIT(32'hFFFE0001)) 
     \count[4]_i_1 
-       (.I0(count[4]),
-        .I1(count[2]),
-        .I2(count[3]),
-        .I3(count[0]),
-        .I4(count[1]),
+       (.I0(count[1]),
+        .I1(count[0]),
+        .I2(count[2]),
+        .I3(count[3]),
+        .I4(count[4]),
         .O(count_0[4]));
-  LUT6 #(
-    .INIT(64'hAAAAAAAAAAAAAAA9)) 
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
+  LUT5 #(
+    .INIT(32'hAAA9AAA8)) 
     \count[5]_i_1 
        (.I0(count[5]),
-        .I1(count[4]),
-        .I2(count[1]),
-        .I3(count[0]),
-        .I4(count[3]),
-        .I5(count[2]),
+        .I1(count[3]),
+        .I2(count[4]),
+        .I3(\count[6]_i_2_n_0 ),
+        .I4(count[6]),
         .O(count_0[5]));
-  LUT6 #(
-    .INIT(64'hCCCCCC32CCCCCCCC)) 
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
+  LUT5 #(
+    .INIT(32'hFFFE0001)) 
     \count[6]_i_1 
-       (.I0(\count[7]_i_2_n_0 ),
-        .I1(count[6]),
-        .I2(count[7]),
+       (.I0(\count[6]_i_2_n_0 ),
+        .I1(count[5]),
+        .I2(count[3]),
         .I3(count[4]),
-        .I4(count[5]),
-        .I5(\count[10]_i_2_n_0 ),
+        .I4(count[6]),
         .O(count_0[6]));
-  LUT6 #(
-    .INIT(64'hF0F0F0C2F0F0F0F0)) 
-    \count[7]_i_1 
-       (.I0(\count[7]_i_2_n_0 ),
-        .I1(count[6]),
-        .I2(count[7]),
-        .I3(count[4]),
-        .I4(count[5]),
-        .I5(\count[10]_i_2_n_0 ),
-        .O(count_0[7]));
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
   LUT3 #(
     .INIT(8'hFE)) 
-    \count[7]_i_2 
-       (.I0(count[9]),
-        .I1(count[10]),
-        .I2(count[8]),
-        .O(\count[7]_i_2_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
-  LUT5 #(
-    .INIT(32'hF0FF0E00)) 
-    \count[8]_i_1 
-       (.I0(count[9]),
-        .I1(count[10]),
-        .I2(\count[10]_i_3_n_0 ),
-        .I3(\count[10]_i_2_n_0 ),
-        .I4(count[8]),
-        .O(count_0[8]));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
-  LUT5 #(
-    .INIT(32'hAAA4AAAA)) 
-    \count[9]_i_1 
-       (.I0(count[9]),
-        .I1(count[10]),
-        .I2(count[8]),
-        .I3(\count[10]_i_3_n_0 ),
-        .I4(\count[10]_i_2_n_0 ),
-        .O(count_0[9]));
+    \count[6]_i_2 
+       (.I0(count[1]),
+        .I1(count[0]),
+        .I2(count[2]),
+        .O(\count[6]_i_2_n_0 ));
   FDRE \count_reg[0] 
        (.C(s_axi_aclk),
         .CE(1'b1),
         .D(count_0[0]),
         .Q(count[0]),
-        .R(EN_16x_Baud_reg_0));
-  FDRE \count_reg[10] 
-       (.C(s_axi_aclk),
-        .CE(1'b1),
-        .D(count_0[10]),
-        .Q(count[10]),
         .R(EN_16x_Baud_reg_0));
   FDRE \count_reg[1] 
        (.C(s_axi_aclk),
@@ -1179,24 +1130,6 @@ module design_1_axi_uartlite_1_0_baudrate
         .CE(1'b1),
         .D(count_0[6]),
         .Q(count[6]),
-        .R(EN_16x_Baud_reg_0));
-  FDRE \count_reg[7] 
-       (.C(s_axi_aclk),
-        .CE(1'b1),
-        .D(count_0[7]),
-        .Q(count[7]),
-        .R(EN_16x_Baud_reg_0));
-  FDRE \count_reg[8] 
-       (.C(s_axi_aclk),
-        .CE(1'b1),
-        .D(count_0[8]),
-        .Q(count[8]),
-        .R(EN_16x_Baud_reg_0));
-  FDRE \count_reg[9] 
-       (.C(s_axi_aclk),
-        .CE(1'b1),
-        .D(count_0[9]),
-        .Q(count[9]),
         .R(EN_16x_Baud_reg_0));
 endmodule
 
@@ -1312,7 +1245,7 @@ module design_1_axi_uartlite_1_0_cdc_sync
         .I4(start_Edge_Detected),
         .I5(in),
         .O(stop_Bit_Position_reg_0));
-  (* SOFT_HLUTNM = "soft_lutpair16" *) 
+  (* SOFT_HLUTNM = "soft_lutpair17" *) 
   LUT4 #(
     .INIT(16'h8000)) 
     fifo_Write_i_1
@@ -1321,7 +1254,7 @@ module design_1_axi_uartlite_1_0_cdc_sync
         .I2(p_2_out),
         .I3(scndry_out),
         .O(fifo_Write0));
-  (* SOFT_HLUTNM = "soft_lutpair16" *) 
+  (* SOFT_HLUTNM = "soft_lutpair17" *) 
   LUT5 #(
     .INIT(32'h00FF0080)) 
     frame_err_ocrd_i_1
@@ -1422,7 +1355,7 @@ module design_1_axi_uartlite_1_0_cntr_incr_decr_addn_f
         .I4(\GEN_BKEND_CE_REGISTERS[1].ce_out_i_reg ),
         .I5(Q[0]),
         .O(addr_i_p1[0]));
-  (* SOFT_HLUTNM = "soft_lutpair23" *) 
+  (* SOFT_HLUTNM = "soft_lutpair24" *) 
   LUT5 #(
     .INIT(32'hAA659AAA)) 
     \INFERRED_GEN.cnt_i[1]_i_1 
@@ -1452,7 +1385,7 @@ module design_1_axi_uartlite_1_0_cntr_incr_decr_addn_f
         .I4(\INFERRED_GEN.cnt_i_reg[2]_0 ),
         .I5(Q[0]),
         .O(addr_i_p1[3]));
-  (* SOFT_HLUTNM = "soft_lutpair23" *) 
+  (* SOFT_HLUTNM = "soft_lutpair24" *) 
   LUT2 #(
     .INIT(4'hB)) 
     \INFERRED_GEN.cnt_i[3]_i_2__0 
@@ -1475,7 +1408,7 @@ module design_1_axi_uartlite_1_0_cntr_incr_decr_addn_f
         .I4(Q[0]),
         .I5(\INFERRED_GEN.cnt_i_reg[2]_0 ),
         .O(addr_i_p1[4]));
-  (* SOFT_HLUTNM = "soft_lutpair24" *) 
+  (* SOFT_HLUTNM = "soft_lutpair25" *) 
   LUT4 #(
     .INIT(16'h0004)) 
     \INFERRED_GEN.cnt_i[4]_i_3__0 
@@ -1484,7 +1417,7 @@ module design_1_axi_uartlite_1_0_cntr_incr_decr_addn_f
         .I2(Q[2]),
         .I3(Q[1]),
         .O(\INFERRED_GEN.cnt_i[4]_i_3__0_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair24" *) 
+  (* SOFT_HLUTNM = "soft_lutpair25" *) 
   LUT3 #(
     .INIT(8'h7F)) 
     \INFERRED_GEN.cnt_i[4]_i_4__0 
@@ -1604,7 +1537,7 @@ module design_1_axi_uartlite_1_0_cntr_incr_decr_addn_f_2
         .I4(Bus_RNW_reg),
         .I5(\INFERRED_GEN.cnt_i[4]_i_4_n_0 ),
         .O(fifo_full_p1));
-  (* SOFT_HLUTNM = "soft_lutpair17" *) 
+  (* SOFT_HLUTNM = "soft_lutpair18" *) 
   LUT5 #(
     .INIT(32'hA6AA5955)) 
     \INFERRED_GEN.cnt_i[0]_i_1__0 
@@ -1659,7 +1592,7 @@ module design_1_axi_uartlite_1_0_cntr_incr_decr_addn_f_2
         .I4(Q[0]),
         .I5(\INFERRED_GEN.cnt_i[4]_i_5__0_n_0 ),
         .O(addr_i_p1[4]));
-  (* SOFT_HLUTNM = "soft_lutpair18" *) 
+  (* SOFT_HLUTNM = "soft_lutpair19" *) 
   LUT5 #(
     .INIT(32'h01000000)) 
     \INFERRED_GEN.cnt_i[4]_i_3 
@@ -1669,7 +1602,7 @@ module design_1_axi_uartlite_1_0_cntr_incr_decr_addn_f_2
         .I3(Bus_RNW_reg),
         .I4(\GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg ),
         .O(\INFERRED_GEN.cnt_i[4]_i_3_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair18" *) 
+  (* SOFT_HLUTNM = "soft_lutpair19" *) 
   LUT3 #(
     .INIT(8'h7F)) 
     \INFERRED_GEN.cnt_i[4]_i_4 
@@ -1677,7 +1610,7 @@ module design_1_axi_uartlite_1_0_cntr_incr_decr_addn_f_2
         .I1(Q[2]),
         .I2(Q[3]),
         .O(\INFERRED_GEN.cnt_i[4]_i_4_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair17" *) 
+  (* SOFT_HLUTNM = "soft_lutpair18" *) 
   LUT3 #(
     .INIT(8'hDF)) 
     \INFERRED_GEN.cnt_i[4]_i_5__0 
@@ -3250,7 +3183,7 @@ module design_1_axi_uartlite_1_0_uartlite_rx
         .D(serial_to_Par[2]),
         .Q(fifo_din[2]),
         .R(\SERIAL_TO_PARALLEL[8].fifo_din[8]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair22" *) 
+  (* SOFT_HLUTNM = "soft_lutpair23" *) 
   LUT4 #(
     .INIT(16'hBA8A)) 
     \SERIAL_TO_PARALLEL[3].fifo_din[3]_i_1 
@@ -3265,7 +3198,7 @@ module design_1_axi_uartlite_1_0_uartlite_rx
         .D(serial_to_Par[3]),
         .Q(fifo_din[3]),
         .R(\SERIAL_TO_PARALLEL[8].fifo_din[8]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair22" *) 
+  (* SOFT_HLUTNM = "soft_lutpair23" *) 
   LUT4 #(
     .INIT(16'hBA8A)) 
     \SERIAL_TO_PARALLEL[4].fifo_din[4]_i_1 
@@ -3294,7 +3227,7 @@ module design_1_axi_uartlite_1_0_uartlite_rx
         .D(serial_to_Par[5]),
         .Q(fifo_din[5]),
         .R(\SERIAL_TO_PARALLEL[8].fifo_din[8]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair21" *) 
+  (* SOFT_HLUTNM = "soft_lutpair22" *) 
   LUT4 #(
     .INIT(16'hBA8A)) 
     \SERIAL_TO_PARALLEL[6].fifo_din[6]_i_1 
@@ -3309,7 +3242,7 @@ module design_1_axi_uartlite_1_0_uartlite_rx
         .D(serial_to_Par[6]),
         .Q(fifo_din[6]),
         .R(\SERIAL_TO_PARALLEL[8].fifo_din[8]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair21" *) 
+  (* SOFT_HLUTNM = "soft_lutpair22" *) 
   LUT4 #(
     .INIT(16'hBA8A)) 
     \SERIAL_TO_PARALLEL[7].fifo_din[7]_i_1 
@@ -3377,7 +3310,7 @@ module design_1_axi_uartlite_1_0_uartlite_rx
         .CLK(s_axi_aclk),
         .D(p_1_out),
         .Q(\data_shift_reg[13]_srl14___UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_12_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair20" *) 
+  (* SOFT_HLUTNM = "soft_lutpair21" *) 
   LUT4 #(
     .INIT(16'h3200)) 
     \data_shift_reg[13]_srl14___UARTLITE_CORE_I_UARTLITE_RX_I_data_shift_reg_r_12_i_1 
@@ -3506,7 +3439,7 @@ module design_1_axi_uartlite_1_0_uartlite_rx
         .D(INPUT_DOUBLE_REGS3_n_3),
         .Q(frame_err_ocrd),
         .R(s_axi_aresetn_0));
-  (* SOFT_HLUTNM = "soft_lutpair19" *) 
+  (* SOFT_HLUTNM = "soft_lutpair20" *) 
   LUT5 #(
     .INIT(32'hBFFFAA00)) 
     running_i_1
@@ -3602,7 +3535,7 @@ module design_1_axi_uartlite_1_0_uartlite_rx
         .D(start_Edge_Detected0),
         .Q(start_Edge_Detected),
         .R(s_axi_aresetn_0));
-  (* SOFT_HLUTNM = "soft_lutpair19" *) 
+  (* SOFT_HLUTNM = "soft_lutpair20" *) 
   LUT3 #(
     .INIT(8'h80)) 
     \status_reg[1]_i_2 
@@ -3624,7 +3557,7 @@ module design_1_axi_uartlite_1_0_uartlite_rx
         .D(stop_Bit_Position_i_1_n_0),
         .Q(stop_Bit_Position_reg_n_0),
         .R(s_axi_aresetn_0));
-  (* SOFT_HLUTNM = "soft_lutpair20" *) 
+  (* SOFT_HLUTNM = "soft_lutpair21" *) 
   LUT3 #(
     .INIT(8'hBA)) 
     valid_rx_i_1
@@ -3790,7 +3723,7 @@ module design_1_axi_uartlite_1_0_uartlite_tx
         .D(fifo_Read0),
         .Q(fifo_Read),
         .R(\data_shift_reg[15]_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair25" *) 
+  (* SOFT_HLUTNM = "soft_lutpair26" *) 
   LUT5 #(
     .INIT(32'hE1F0F1F0)) 
     \mux_sel[0]_i_1 
@@ -3809,7 +3742,7 @@ module design_1_axi_uartlite_1_0_uartlite_tx
         .I3(tx_Data_Enable_reg_n_0),
         .I4(tx_DataBits),
         .O(\mux_sel[1]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair25" *) 
+  (* SOFT_HLUTNM = "soft_lutpair26" *) 
   LUT5 #(
     .INIT(32'h7777888C)) 
     \mux_sel[2]_i_1 

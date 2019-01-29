@@ -14,16 +14,16 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 24600 
+INFO: Helper process launched with PID 31258 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1464.016 ; gain = 30.918 ; free physical = 237 ; free virtual = 5056
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1479.207 ; gain = 86.918 ; free physical = 123 ; free virtual = 3467
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_1_0' [/root/Development/microblaze_uart/microblaze_uart.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_1_0/synth/design_1_axi_uartlite_1_0.vhd:86]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 166666666 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
-	Parameter C_BAUDRATE bound to: 9600 - type: integer 
+	Parameter C_BAUDRATE bound to: 115200 - type: integer 
 	Parameter C_DATA_BITS bound to: 8 - type: integer 
 	Parameter C_USE_PARITY bound to: 0 - type: integer 
 	Parameter C_ODD_PARITY bound to: 0 - type: integer 
@@ -33,19 +33,19 @@ INFO: [Synth 8-638] synthesizing module 'axi_uartlite' [/root/Development/microb
 	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 166666666 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
-	Parameter C_BAUDRATE bound to: 9600 - type: integer 
+	Parameter C_BAUDRATE bound to: 115200 - type: integer 
 	Parameter C_DATA_BITS bound to: 8 - type: integer 
 	Parameter C_USE_PARITY bound to: 0 - type: integer 
 	Parameter C_ODD_PARITY bound to: 0 - type: integer 
 INFO: [Synth 8-638] synthesizing module 'uartlite_core' [/root/Development/microblaze_uart/microblaze_uart.srcs/sources_1/bd/design_1/ipshared/7371/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1650]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 166666666 - type: integer 
-	Parameter C_BAUDRATE bound to: 9600 - type: integer 
+	Parameter C_BAUDRATE bound to: 115200 - type: integer 
 	Parameter C_DATA_BITS bound to: 8 - type: integer 
 	Parameter C_USE_PARITY bound to: 0 - type: integer 
 	Parameter C_ODD_PARITY bound to: 0 - type: integer 
 INFO: [Synth 8-638] synthesizing module 'baudrate' [/root/Development/microblaze_uart/microblaze_uart.srcs/sources_1/bd/design_1/ipshared/7371/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1453]
-	Parameter C_RATIO bound to: 1085 - type: integer 
+	Parameter C_RATIO bound to: 90 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'baudrate' (1#1) [/root/Development/microblaze_uart/microblaze_uart.srcs/sources_1/bd/design_1/ipshared/7371/hdl/axi_uartlite_v2_0_vh_rfs.vhd:1453]
 INFO: [Synth 8-638] synthesizing module 'uartlite_rx' [/root/Development/microblaze_uart/microblaze_uart.srcs/sources_1/bd/design_1/ipshared/7371/hdl/axi_uartlite_v2_0_vh_rfs.vhd:927]
 	Parameter C_FAMILY bound to: artix7 - type: string 
@@ -199,7 +199,7 @@ WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[0]
 WARNING: [Synth 8-3331] design cdc_sync has unconnected port scndry_resetn
 WARNING: [Synth 8-3331] design uartlite_core has unconnected port bus2ip_cs
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1510.773 ; gain = 77.676 ; free physical = 245 ; free virtual = 5064
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1526.965 ; gain = 134.676 ; free physical = 176 ; free virtual = 3479
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -212,10 +212,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1510.773 ; gain = 77.676 ; free physical = 245 ; free virtual = 5065
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1526.965 ; gain = 134.676 ; free physical = 174 ; free virtual = 3481
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1510.773 ; gain = 77.676 ; free physical = 245 ; free virtual = 5065
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1526.965 ; gain = 134.676 ; free physical = 174 ; free virtual = 3480
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -234,29 +234,29 @@ Parsing XDC File [/root/Development/microblaze_uart/microblaze_uart.runs/design_
 Finished Parsing XDC File [/root/Development/microblaze_uart/microblaze_uart.runs/design_1_axi_uartlite_1_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1810.133 ; gain = 0.000 ; free physical = 114 ; free virtual = 4823
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1826.309 ; gain = 0.000 ; free physical = 121 ; free virtual = 3233
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 6 instances were transformed.
   FDR => FDRE: 6 instances
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1810.137 ; gain = 0.000 ; free physical = 114 ; free virtual = 4822
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1810.137 ; gain = 0.004 ; free physical = 114 ; free virtual = 4822
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1826.312 ; gain = 0.000 ; free physical = 106 ; free virtual = 3234
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.21 . Memory (MB): peak = 1826.312 ; gain = 0.004 ; free physical = 127 ; free virtual = 3232
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1810.137 ; gain = 377.039 ; free physical = 191 ; free virtual = 4899
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1826.312 ; gain = 434.023 ; free physical = 128 ; free virtual = 3305
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35ticsg324-1L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1810.137 ; gain = 377.039 ; free physical = 191 ; free virtual = 4899
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1826.312 ; gain = 434.023 ; free physical = 110 ; free virtual = 3305
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for U0. (constraint file  /root/Development/microblaze_uart/microblaze_uart.runs/design_1_axi_uartlite_1_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 1810.137 ; gain = 377.039 ; free physical = 192 ; free virtual = 4901
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1826.312 ; gain = 434.023 ; free physical = 109 ; free virtual = 3306
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "EN_16x_Baud" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "fifo_full_p1" won't be mapped to RAM because it is too sparse
@@ -280,7 +280,7 @@ INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address si
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1810.141 ; gain = 377.043 ; free physical = 183 ; free virtual = 4892
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1826.316 ; gain = 434.027 ; free physical = 126 ; free virtual = 3297
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -293,20 +293,19 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     11 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
 	   3 Input      5 Bit       Adders := 2     
 	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
 	               32 Bit    Registers := 1     
 	               16 Bit    Registers := 2     
-	               11 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
 	                5 Bit    Registers := 2     
 	                4 Bit    Registers := 1     
 	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 46    
 +---Muxes : 
-	   2 Input     11 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 2     
 	   4 Input      4 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 6     
@@ -323,12 +322,11 @@ Hierarchical RTL Component report
 Module baudrate 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     11 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
 +---Registers : 
-	               11 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input     11 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 1     
 Module cntr_incr_decr_addn_f 
 Detailed RTL Component Info : 
@@ -450,7 +448,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\AXI_L
 INFO: [Synth 8-3332] Sequential element (UARTLITE_CORE_I/UARTLITE_RX_I/INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module axi_uartlite.
 INFO: [Synth 8-3332] Sequential element (UARTLITE_CORE_I/UARTLITE_RX_I/INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module axi_uartlite.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1810.141 ; gain = 377.043 ; free physical = 168 ; free virtual = 4883
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 1826.316 ; gain = 434.027 ; free physical = 121 ; free virtual = 3288
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -462,13 +460,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 1810.141 ; gain = 377.043 ; free physical = 108 ; free virtual = 4767
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 1826.316 ; gain = 434.027 ; free physical = 105 ; free virtual = 3164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 1810.141 ; gain = 377.043 ; free physical = 170 ; free virtual = 4765
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 1826.316 ; gain = 434.027 ; free physical = 119 ; free virtual = 3160
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -480,7 +478,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 1810.141 ; gain = 377.043 ; free physical = 168 ; free virtual = 4763
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 1826.316 ; gain = 434.027 ; free physical = 114 ; free virtual = 3159
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -504,7 +502,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1810.141 ; gain = 377.043 ; free physical = 159 ; free virtual = 4763
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 1826.316 ; gain = 434.027 ; free physical = 106 ; free virtual = 3161
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -517,7 +515,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1810.141 ; gain = 377.043 ; free physical = 159 ; free virtual = 4763
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 1826.316 ; gain = 434.027 ; free physical = 106 ; free virtual = 3161
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -529,25 +527,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1810.141 ; gain = 377.043 ; free physical = 159 ; free virtual = 4763
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 1826.316 ; gain = 434.027 ; free physical = 102 ; free virtual = 3161
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1810.141 ; gain = 377.043 ; free physical = 159 ; free virtual = 4763
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 1826.316 ; gain = 434.027 ; free physical = 102 ; free virtual = 3161
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1810.141 ; gain = 377.043 ; free physical = 159 ; free virtual = 4763
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 1826.316 ; gain = 434.027 ; free physical = 102 ; free virtual = 3161
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1810.141 ; gain = 377.043 ; free physical = 159 ; free virtual = 4763
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 1826.316 ; gain = 434.027 ; free physical = 102 ; free virtual = 3161
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -587,15 +585,15 @@ Report Cell Usage:
 +------+-------+------+
 |      |Cell   |Count |
 +------+-------+------+
-|1     |LUT1   |     1|
-|2     |LUT2   |    14|
-|3     |LUT3   |    17|
+|1     |LUT1   |     2|
+|2     |LUT2   |    15|
+|3     |LUT3   |    16|
 |4     |LUT4   |    26|
-|5     |LUT5   |    36|
-|6     |LUT6   |    23|
+|5     |LUT5   |    35|
+|6     |LUT6   |    19|
 |7     |SRL16E |    18|
 |8     |FDR    |     4|
-|9     |FDRE   |    93|
+|9     |FDRE   |    89|
 |10    |FDSE   |    18|
 +------+-------+------+
 
@@ -603,15 +601,15 @@ Report Instance Areas:
 +------+--------------------------------------------------------------------------+--------------------------+------+
 |      |Instance                                                                  |Module                    |Cells |
 +------+--------------------------------------------------------------------------+--------------------------+------+
-|1     |top                                                                       |                          |   250|
-|2     |  U0                                                                      |axi_uartlite              |   250|
+|1     |top                                                                       |                          |   242|
+|2     |  U0                                                                      |axi_uartlite              |   242|
 |3     |    AXI_LITE_IPIF_I                                                       |axi_lite_ipif             |    69|
 |4     |      I_SLAVE_ATTACHMENT                                                  |slave_attachment          |    69|
 |5     |        I_DECODER                                                         |address_decoder           |    42|
 |6     |          \MEM_DECODE_GEN[0].PER_CE_GEN[0].MULTIPLE_CES_THIS_CS_GEN.CE_I  |pselect_f                 |     1|
 |7     |          \MEM_DECODE_GEN[0].PER_CE_GEN[2].MULTIPLE_CES_THIS_CS_GEN.CE_I  |pselect_f__parameterized1 |     1|
-|8     |    UARTLITE_CORE_I                                                       |uartlite_core             |   181|
-|9     |      BAUD_RATE_I                                                         |baudrate                  |    27|
+|8     |    UARTLITE_CORE_I                                                       |uartlite_core             |   173|
+|9     |      BAUD_RATE_I                                                         |baudrate                  |    19|
 |10    |      UARTLITE_RX_I                                                       |uartlite_rx               |    93|
 |11    |        INPUT_DOUBLE_REGS3                                                |cdc_sync                  |     8|
 |12    |        SRL_FIFO_I                                                        |srl_fifo_f_0              |    27|
@@ -625,17 +623,17 @@ Report Instance Areas:
 |20    |            DYNSHREG_F_I                                                  |dynshreg_f                |    13|
 +------+--------------------------------------------------------------------------+--------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1810.141 ; gain = 377.043 ; free physical = 159 ; free virtual = 4763
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 1826.316 ; gain = 434.027 ; free physical = 102 ; free virtual = 3161
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 28 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1810.141 ; gain = 77.680 ; free physical = 210 ; free virtual = 4813
-Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 1810.141 ; gain = 377.043 ; free physical = 210 ; free virtual = 4813
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 1826.316 ; gain = 134.680 ; free physical = 146 ; free virtual = 3211
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 1826.316 ; gain = 434.027 ; free physical = 142 ; free virtual = 3212
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1810.141 ; gain = 0.000 ; free physical = 143 ; free virtual = 4760
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1826.316 ; gain = 0.000 ; free physical = 105 ; free virtual = 3156
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 4 instances were transformed.
   FDR => FDRE: 4 instances
@@ -643,16 +641,16 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 76 Infos, 73 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1810.141 ; gain = 377.121 ; free physical = 196 ; free virtual = 4815
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1810.141 ; gain = 0.000 ; free physical = 196 ; free virtual = 4815
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 1826.316 ; gain = 439.832 ; free physical = 122 ; free virtual = 3212
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1826.316 ; gain = 0.000 ; free physical = 102 ; free virtual = 3212
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/root/Development/microblaze_uart/microblaze_uart.runs/design_1_axi_uartlite_1_0_synth_1/design_1_axi_uartlite_1_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_axi_uartlite_1_0, cache-ID = b383283b8e053ea5
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_axi_uartlite_1_0, cache-ID = 8632e1fc17412285
 INFO: [Coretcl 2-1174] Renamed 19 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1834.152 ; gain = 0.000 ; free physical = 182 ; free virtual = 4815
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1850.328 ; gain = 0.000 ; free physical = 103 ; free virtual = 3212
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/root/Development/microblaze_uart/microblaze_uart.runs/design_1_axi_uartlite_1_0_synth_1/design_1_axi_uartlite_1_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_axi_uartlite_1_0_utilization_synth.rpt -pb design_1_axi_uartlite_1_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Jan 26 20:57:54 2019...
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 28 23:08:23 2019...

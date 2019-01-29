@@ -1,6 +1,13 @@
-21:02:42 **** Incremental Build of configuration Debug for project uart_interrupts ****
+00:00:51 **** Incremental Build of configuration Debug for project uart_interrupts ****
 make all 
-make: `all' に対して行うべき事はありません.
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../uart_interrupts_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:1:10: fatal error: xuartlite_l.h: No such file or directory
+ #include <xuartlite_l.h>
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/helloworld.o] Error 1
 
-21:02:42 Build Finished (took 97ms)
+00:00:51 Build Finished (took 80ms)
 

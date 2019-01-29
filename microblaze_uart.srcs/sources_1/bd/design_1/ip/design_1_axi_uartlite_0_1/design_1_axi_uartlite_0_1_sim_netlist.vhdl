@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
 -- Date        : Tue Jan 22 22:10:26 2019
 -- Host        : vivado running 64-bit unknown
--- Command     : write_vhdl -force -mode funcsim
---               /root/Development/microblaze_uart/microblaze_uart.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_1/design_1_axi_uartlite_0_1_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top design_1_axi_uartlite_0_1 -prefix
+--               design_1_axi_uartlite_0_1_ design_1_axi_uartlite_0_1_sim_netlist.vhdl
 -- Design      : design_1_axi_uartlite_0_1
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -20,8 +20,6 @@ entity design_1_axi_uartlite_0_1_baudrate is
     EN_16x_Baud_reg_0 : in STD_LOGIC;
     s_axi_aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_uartlite_0_1_baudrate : entity is "baudrate";
 end design_1_axi_uartlite_0_1_baudrate;
 
 architecture STRUCTURE of design_1_axi_uartlite_0_1_baudrate is
@@ -320,8 +318,6 @@ entity design_1_axi_uartlite_0_1_cdc_sync is
     rx : in STD_LOGIC;
     s_axi_aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_uartlite_0_1_cdc_sync : entity is "cdc_sync";
 end design_1_axi_uartlite_0_1_cdc_sync;
 
 architecture STRUCTURE of design_1_axi_uartlite_0_1_cdc_sync is
@@ -464,8 +460,6 @@ entity design_1_axi_uartlite_0_1_cntr_incr_decr_addn_f is
     tx_Start : in STD_LOGIC;
     s_axi_aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_uartlite_0_1_cntr_incr_decr_addn_f : entity is "cntr_incr_decr_addn_f";
 end design_1_axi_uartlite_0_1_cntr_incr_decr_addn_f;
 
 architecture STRUCTURE of design_1_axi_uartlite_0_1_cntr_incr_decr_addn_f is
@@ -890,8 +884,6 @@ entity design_1_axi_uartlite_0_1_dynshreg_f is
     Q : in STD_LOGIC_VECTOR ( 3 downto 0 );
     s_axi_aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_uartlite_0_1_dynshreg_f : entity is "dynshreg_f";
 end design_1_axi_uartlite_0_1_dynshreg_f;
 
 architecture STRUCTURE of design_1_axi_uartlite_0_1_dynshreg_f is
@@ -1263,8 +1255,6 @@ entity design_1_axi_uartlite_0_1_pselect_f is
     \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg[0]\ : in STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg[0]_0\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_uartlite_0_1_pselect_f : entity is "pselect_f";
 end design_1_axi_uartlite_0_1_pselect_f;
 
 architecture STRUCTURE of design_1_axi_uartlite_0_1_pselect_f is
@@ -1357,8 +1347,6 @@ entity design_1_axi_uartlite_0_1_address_decoder is
     \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_1\ : in STD_LOGIC;
     \GEN_BKEND_CE_REGISTERS[2].ce_out_i_reg[2]_2\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_uartlite_0_1_address_decoder : entity is "address_decoder";
 end design_1_axi_uartlite_0_1_address_decoder;
 
 architecture STRUCTURE of design_1_axi_uartlite_0_1_address_decoder is
@@ -1875,8 +1863,6 @@ entity design_1_axi_uartlite_0_1_srl_fifo_rbu_f is
     fifo_wr : in STD_LOGIC;
     s_axi_wdata : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_uartlite_0_1_srl_fifo_rbu_f : entity is "srl_fifo_rbu_f";
 end design_1_axi_uartlite_0_1_srl_fifo_rbu_f;
 
 architecture STRUCTURE of design_1_axi_uartlite_0_1_srl_fifo_rbu_f is
@@ -2080,8 +2066,6 @@ entity design_1_axi_uartlite_0_1_slave_attachment is
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_araddr : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_uartlite_0_1_slave_attachment : entity is "slave_attachment";
 end design_1_axi_uartlite_0_1_slave_attachment;
 
 architecture STRUCTURE of design_1_axi_uartlite_0_1_slave_attachment is
@@ -2499,8 +2483,6 @@ entity design_1_axi_uartlite_0_1_srl_fifo_f is
     fifo_wr : in STD_LOGIC;
     s_axi_wdata : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_uartlite_0_1_srl_fifo_f : entity is "srl_fifo_f";
 end design_1_axi_uartlite_0_1_srl_fifo_f;
 
 architecture STRUCTURE of design_1_axi_uartlite_0_1_srl_fifo_f is
@@ -2632,8 +2614,6 @@ entity design_1_axi_uartlite_0_1_axi_lite_ipif is
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_araddr : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_uartlite_0_1_axi_lite_ipif : entity is "axi_lite_ipif";
 end design_1_axi_uartlite_0_1_axi_lite_ipif;
 
 architecture STRUCTURE of design_1_axi_uartlite_0_1_axi_lite_ipif is
@@ -2710,8 +2690,6 @@ entity design_1_axi_uartlite_0_1_uartlite_rx is
     tx_Buffer_Empty_Pre : in STD_LOGIC;
     rx : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_uartlite_0_1_uartlite_rx : entity is "uartlite_rx";
 end design_1_axi_uartlite_0_1_uartlite_rx;
 
 architecture STRUCTURE of design_1_axi_uartlite_0_1_uartlite_rx is
@@ -3360,8 +3338,6 @@ entity design_1_axi_uartlite_0_1_uartlite_tx is
     fifo_wr : in STD_LOGIC;
     s_axi_wdata : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_uartlite_0_1_uartlite_tx : entity is "uartlite_tx";
 end design_1_axi_uartlite_0_1_uartlite_tx;
 
 architecture STRUCTURE of design_1_axi_uartlite_0_1_uartlite_tx is
@@ -3646,8 +3622,6 @@ entity design_1_axi_uartlite_0_1_uartlite_core is
     fifo_wr : in STD_LOGIC;
     s_axi_wdata : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_uartlite_0_1_uartlite_core : entity is "uartlite_core";
 end design_1_axi_uartlite_0_1_uartlite_core;
 
 architecture STRUCTURE of design_1_axi_uartlite_0_1_uartlite_core is
@@ -3843,8 +3817,6 @@ entity design_1_axi_uartlite_0_1_axi_uartlite is
   attribute C_S_AXI_DATA_WIDTH of design_1_axi_uartlite_0_1_axi_uartlite : entity is 32;
   attribute C_USE_PARITY : integer;
   attribute C_USE_PARITY of design_1_axi_uartlite_0_1_axi_uartlite : entity is 0;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_uartlite_0_1_axi_uartlite : entity is "axi_uartlite";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of design_1_axi_uartlite_0_1_axi_uartlite : entity is "yes";
 end design_1_axi_uartlite_0_1_axi_uartlite;

@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="36">
   <CompositeFile CompositeFileTopName="design_1" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1548536033"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1548536033"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1548536033"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1548536033"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1548719490"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1548719490"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1548719490"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1548719490"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xci" Type="IP">
         <Instance HierarchyPath="clk_wiz_0"/>
@@ -154,14 +154,6 @@
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/design_1_auto_cc_0/design_1_auto_cc_0.xci" Type="IP">
-        <Instance HierarchyPath="microblaze_0_axi_periph/m03_couplers/auto_cc"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
       <File Name="ip/design_1_axi_uartlite_1_0/design_1_axi_uartlite_1_0.xci" Type="IP">
         <Instance HierarchyPath="axi_uartlite_1"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
@@ -172,6 +164,14 @@
       </File>
       <File Name="ip/design_1_rst_clk_wiz_0_166M_0/design_1_rst_clk_wiz_0_166M_0.xci" Type="IP">
         <Instance HierarchyPath="rst_clk_wiz_0_166M"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/design_1_auto_cc_0/design_1_auto_cc_0.xci" Type="IP">
+        <Instance HierarchyPath="microblaze_0_axi_periph/m03_couplers/auto_cc"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
