@@ -1,2 +1,2 @@
    text	   data	    bss	    dec	    hex	filename
-  15544	   1380	   3212	  20136	   4ea8	uart_interrupts.elf
+  27112	   1380	   3340	  31832	   7c58	uart_interrupts.elf

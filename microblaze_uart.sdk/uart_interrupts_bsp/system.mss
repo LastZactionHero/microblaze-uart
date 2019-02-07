@@ -16,6 +16,7 @@ BEGIN PROCESSOR
  PARAMETER DRIVER_VER = 2.8
  PARAMETER HW_INSTANCE = microblaze_0
  PARAMETER compiler_flags =  -mlittle-endian -mxl-soft-mul -mcpu=v11.0
+ PARAMETER extra_compiler_flags = -g3 -O0
 END
 
 
