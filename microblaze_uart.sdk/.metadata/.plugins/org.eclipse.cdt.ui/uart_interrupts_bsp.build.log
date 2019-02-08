@@ -1,4 +1,4 @@
-04:19:09 **** Auto Build of project uart_interrupts_bsp ****
+00:16:45 **** Auto Build of project uart_interrupts_bsp ****
 make -k all 
 Running Make include in microblaze_0/libsrc/standalone_v6_8/src
 make -C microblaze_0/libsrc/standalone_v6_8/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g3 -O0"
@@ -18,7 +18,6 @@ Compiling standalone
 microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
  #pragma message ("For the sleep routines, assembly instructions are used")
          ^~~~~~~
-mb-ar: creating ../../../lib/libxil.a
 Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src
 make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g3 -O0"
 Compiling uartlite
@@ -36,5 +35,5 @@ make -C microblaze_0/libsrc/intc_v3_8/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-
 Compiling intc
 Finished building libraries
 
-04:19:11 Build Finished (took 1s.845ms)
+00:16:47 Build Finished (took 2s.28ms)
 

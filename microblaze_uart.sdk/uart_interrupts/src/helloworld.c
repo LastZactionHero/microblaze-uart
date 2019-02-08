@@ -19,55 +19,19 @@ UINTPTR uart_send_active_device_baseaddr;
 #define UART_TX_BUFFER_DONE (uart_tx_idx == uart_send_buffer_len)
 
 
-void print_uart_status(UINTPTR *baseaddr_p) {
-	unsigned int status = XUartLite_GetStatusReg(baseaddr_p);
-	XGpio_DiscreteWrite(&gpio, 1, status);
-
-	for(int i = 0; i < 8; i++) {
-		int val = '0';
-		if(1 << i & status) {
-			val = '1';
-		}
-		XUartLite_SendByte(baseaddr_p, val);
-	}
-	XUartLite_SendByte(baseaddr_p, '\r');
-	XUartLite_SendByte(baseaddr_p, '\n');
-}
-
 // UART0 ISR
-void uart_0_int_handler(UINTPTR *baseaddr_p) {
-	XGpio_DiscreteWrite(&gpio, 1, 0x01);
-	/* Read from UART until empty */
-//	XIntc_AckIntr(XPAR_INTC_0_BASEADDR, XPAR_AXI_UARTLITE_0_INTERRUPT_MASK);
+void uart_0_int_handler(void *baseaddr_p) {
 
-	char c;
-
-	while (!XUartLite_IsReceiveEmpty(baseaddr_p)) {
-//		XGpio_DiscreteWrite(&gpio, 1, 0x02);
-//		XGpio_DiscreteWrite(&gpio, 1, light++);
-		c = XUartLite_ReadReg(baseaddr_p, XUL_RX_FIFO_OFFSET);
-//		c = XUartLite_RecvByte(baseaddr_p); // Read a character
-//		print_uart_status(baseaddr_p);
-//		xil_printf(c);
-//		XGpio_DiscreteWrite(&gpio, 1, c);
-	//XUartLite_SendByte(baseaddr_p, c); // Echo
-		XGpio_DiscreteWrite(&gpio, 1, light++);
+	while (!XUartLite_IsReceiveEmpty(baseaddr_p)) { // This keeps pointing to the wrong addres...
+//	while(!((Xil_In32((((baseaddr_p))) + (8)) & 0x01) != 0x01)) {
+		char c = XUartLite_ReadReg(baseaddr_p, XUL_RX_FIFO_OFFSET);
+		XUartLite_SendByte(baseaddr_p, c); // Echo
+		XGpio_DiscreteWrite(&gpio, 1, c);
 	}
-
-
-//	XUartLite_SendByte(baseaddr_p, 'x');
-
 }
 
 // UART1 ISR
 void uart_1_int_handler(UINTPTR *baseaddr_p) {
-//	XGpio_DiscreteWrite(&gpio, 1, 0x02);
-
-	/* Read from UART until empty */
-	while (!XUartLite_IsReceiveEmpty(baseaddr_p)) {
-//		char c = XUartLite_RecvByte(baseaddr_p); // Read a character
-//		XUartLite_SendByte(baseaddr_p, c); // Echo
-	}
 }
 
 
@@ -115,7 +79,7 @@ void uart_buffered_tx_segment(void *baseaddr_p) {
 int main(void)
 {
 	// Write something to GPIO
-	XGpio_Initialize(&gpio, XPAR_AXI_GPIO_0_DEVICE_ID);
+ 	XGpio_Initialize(&gpio, XPAR_AXI_GPIO_0_DEVICE_ID);
 	XGpio_SetDataDirection(&gpio, 1, 0xFFFFFFF0);
 	XGpio_DiscreteWrite(&gpio, 1, 0x0E);
 
@@ -149,20 +113,10 @@ int main(void)
 	XUartLite_EnableIntr(XPAR_AXI_UARTLITE_0_BASEADDR);
 	XUartLite_EnableIntr(XPAR_AXI_UARTLITE_1_BASEADDR);
 
-	print_uart_status(XPAR_AXI_UARTLITE_0_BASEADDR);
-
 	uart_buffered_tx("Hello world! I'm a super long string! Transmit me, please!\r\n", XPAR_AXI_UARTLITE_0_BASEADDR);
 	uart_buffered_tx("One sec, gotta transmit a message on UART1.\r\n", XPAR_AXI_UARTLITE_1_BASEADDR);
 	uart_buffered_tx("Alright, I'm back, transmitting on UART0.\r\n", XPAR_AXI_UARTLITE_0_BASEADDR);
 
-	print_uart_status(XPAR_AXI_UARTLITE_0_BASEADDR);
-
 	/* Wait for interrupts to occur */
 	while(1);
-	//	while (1) {
-//		while (!XUartLite_IsReceiveEmpty(XPAR_AXI_UARTLITE_0_BASEADDR)) {
-//			XGpio_DiscreteWrite(&gpio, 1, light++);
-//			char c = XUartLite_RecvByte(XPAR_AXI_UARTLITE_0_BASEADDR); // Read a character
-//		}
-//	}
 }
