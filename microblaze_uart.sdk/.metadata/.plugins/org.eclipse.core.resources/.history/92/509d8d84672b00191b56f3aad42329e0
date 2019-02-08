@@ -9,6 +9,7 @@
 
 XGpio gpio;
 
+unsigned int light = 0;
 
 unsigned char *uart_send_buffer;
 unsigned int uart_send_buffer_len = 0;
@@ -24,6 +25,7 @@ void uart_0_int_handler(void *baseaddr_p) {
 	while (!XUartLite_IsReceiveEmpty(baseaddr_p)) { // This keeps pointing to the wrong addres...
 		char c = XUartLite_ReadReg(baseaddr_p, XUL_RX_FIFO_OFFSET);
 		XUartLite_SendByte(baseaddr_p, c); // Echo
+		XGpio_DiscreteWrite(&gpio, 1, c);
 	}
 }
 

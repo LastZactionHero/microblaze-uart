@@ -9,6 +9,7 @@
 
 XGpio gpio;
 
+unsigned int light = 0;
 
 unsigned char *uart_send_buffer;
 unsigned int uart_send_buffer_len = 0;

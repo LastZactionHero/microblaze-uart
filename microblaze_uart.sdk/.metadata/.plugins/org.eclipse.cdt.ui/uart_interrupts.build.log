@@ -1,6 +1,201 @@
-00:43:47 **** Incremental Build of configuration Debug for project uart_interrupts ****
+01:05:43 **** Auto Build of configuration Debug for project uart_interrupts ****
 make all 
-make: Nothing to be done for `all'.
+Building file: ../src/helloworld.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -DDEBUG_MODE -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../uart_interrupts_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../src/helloworld.c:1:0:
+../src/helloworld.c: In function 'uart_0_int_handler':
+../../uart_interrupts_bsp/microblaze_0/include/xuartlite_l.h:189:17: warning: passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]
+  XUartLite_In32((BaseAddress) + (RegOffset))
+                 ^
+../../uart_interrupts_bsp/microblaze_0/include/xuartlite_l.h:226:3: note: in expansion of macro 'XUartLite_ReadReg'
+   XUartLite_ReadReg((BaseAddress), XUL_STATUS_REG_OFFSET)
+   ^~~~~~~~~~~~~~~~~
+../../uart_interrupts_bsp/microblaze_0/include/xuartlite_l.h:243:5: note: in expansion of macro 'XUartLite_GetStatusReg'
+   ((XUartLite_GetStatusReg((BaseAddress)) & XUL_SR_RX_FIFO_VALID_DATA) != \
+     ^~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:24:10: note: in expansion of macro 'XUartLite_IsReceiveEmpty'
+  while (!XUartLite_IsReceiveEmpty(baseaddr_p)) { // This keeps pointing to the wrong addres...
+          ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../../uart_interrupts_bsp/microblaze_0/include/xuartlite_l.h:69:0,
+                 from ../src/helloworld.c:1:
+../../uart_interrupts_bsp/microblaze_0/include/xil_io.h:147:19: note: expected 'UINTPTR {aka unsigned int}' but argument is of type 'void *'
+ static INLINE u32 Xil_In32(UINTPTR Addr)
+                   ^~~~~~~~
+In file included from ../src/helloworld.c:1:0:
+../../uart_interrupts_bsp/microblaze_0/include/xuartlite_l.h:189:17: warning: passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]
+  XUartLite_In32((BaseAddress) + (RegOffset))
+                 ^
+../src/helloworld.c:25:12: note: in expansion of macro 'XUartLite_ReadReg'
+   char c = XUartLite_ReadReg(baseaddr_p, XUL_RX_FIFO_OFFSET);
+            ^~~~~~~~~~~~~~~~~
+In file included from ../../uart_interrupts_bsp/microblaze_0/include/xuartlite_l.h:69:0,
+                 from ../src/helloworld.c:1:
+../../uart_interrupts_bsp/microblaze_0/include/xil_io.h:147:19: note: expected 'UINTPTR {aka unsigned int}' but argument is of type 'void *'
+ static INLINE u32 Xil_In32(UINTPTR Addr)
+                   ^~~~~~~~
+../src/helloworld.c:26:22: warning: passing argument 1 of 'XUartLite_SendByte' makes integer from pointer without a cast [-Wint-conversion]
+   XUartLite_SendByte(baseaddr_p, c); // Echo
+                      ^~~~~~~~~~
+In file included from ../src/helloworld.c:1:0:
+../../uart_interrupts_bsp/microblaze_0/include/xuartlite_l.h:322:6: note: expected 'UINTPTR {aka unsigned int}' but argument is of type 'void *'
+ void XUartLite_SendByte(UINTPTR BaseAddress, u8 Data);
+      ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'uart_buffered_tx':
+../src/helloworld.c:47:35: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+  uart_send_active_device_baseaddr = baseaddr_p;
+                                   ^
+../src/helloworld.c:51:32: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  uart_send_buffer_len = strlen(buffer);
+                                ^~~~~~
+In file included from /home/zach/Xilinx/SDK/2018.3/gnu/microblaze/lin/microblaze-xilinx-elf/include/ctype.h:4:0,
+                 from ../../uart_interrupts_bsp/microblaze_0/include/xil_printf.h:8,
+                 from ../../uart_interrupts_bsp/microblaze_0/include/xil_io.h:61,
+                 from ../../uart_interrupts_bsp/microblaze_0/include/xuartlite_l.h:69,
+                 from ../src/helloworld.c:1:
+/home/zach/Xilinx/SDK/2018.3/gnu/microblaze/lin/microblaze-xilinx-elf/include/string.h:33:9: note: expected 'const char *' but argument is of type 'unsigned char *'
+ size_t  _EXFUN(strlen,(const char *));
+         ^
+../src/helloworld.c:53:21: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
+  uart_send_buffer = calloc(uart_send_buffer_len + 1, sizeof(unsigned char));
+                     ^~~~~~
+../src/helloworld.c:53:21: warning: incompatible implicit declaration of built-in function 'calloc'
+../src/helloworld.c:53:21: note: include '<stdlib.h>' or provide a declaration of 'calloc'
+../src/helloworld.c:54:10: warning: pointer targets in passing argument 1 of 'strncpy' differ in signedness [-Wpointer-sign]
+  strncpy(uart_send_buffer, buffer, uart_send_buffer_len);
+          ^~~~~~~~~~~~~~~~
+In file included from /home/zach/Xilinx/SDK/2018.3/gnu/microblaze/lin/microblaze-xilinx-elf/include/ctype.h:4:0,
+                 from ../../uart_interrupts_bsp/microblaze_0/include/xil_printf.h:8,
+                 from ../../uart_interrupts_bsp/microblaze_0/include/xil_io.h:61,
+                 from ../../uart_interrupts_bsp/microblaze_0/include/xuartlite_l.h:69,
+                 from ../src/helloworld.c:1:
+/home/zach/Xilinx/SDK/2018.3/gnu/microblaze/lin/microblaze-xilinx-elf/include/string.h:36:8: note: expected 'char * restrict' but argument is of type 'unsigned char *'
+ char  *_EXFUN(strncpy,(char *__restrict, const char *__restrict, size_t));
+        ^
+../src/helloworld.c:54:28: warning: pointer targets in passing argument 2 of 'strncpy' differ in signedness [-Wpointer-sign]
+  strncpy(uart_send_buffer, buffer, uart_send_buffer_len);
+                            ^~~~~~
+In file included from /home/zach/Xilinx/SDK/2018.3/gnu/microblaze/lin/microblaze-xilinx-elf/include/ctype.h:4:0,
+                 from ../../uart_interrupts_bsp/microblaze_0/include/xil_printf.h:8,
+                 from ../../uart_interrupts_bsp/microblaze_0/include/xil_io.h:61,
+                 from ../../uart_interrupts_bsp/microblaze_0/include/xuartlite_l.h:69,
+                 from ../src/helloworld.c:1:
+/home/zach/Xilinx/SDK/2018.3/gnu/microblaze/lin/microblaze-xilinx-elf/include/string.h:36:8: note: expected 'const char * restrict' but argument is of type 'unsigned char *'
+ char  *_EXFUN(strncpy,(char *__restrict, const char *__restrict, size_t));
+        ^
+../src/helloworld.c:57:3: warning: implicit declaration of function 'uart_buffered_tx_segment'; did you mean 'uart_buffered_tx'? [-Wimplicit-function-declaration]
+   uart_buffered_tx_segment(baseaddr_p);
+   ^~~~~~~~~~~~~~~~~~~~~~~~
+   uart_buffered_tx
+../src/helloworld.c: At top level:
+../src/helloworld.c:62:6: warning: conflicting types for 'uart_buffered_tx_segment'
+ void uart_buffered_tx_segment(void *baseaddr_p) {
+      ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:57:3: note: previous implicit declaration of 'uart_buffered_tx_segment' was here
+   uart_buffered_tx_segment(baseaddr_p);
+   ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:1:0:
+../src/helloworld.c: In function 'uart_buffered_tx_segment':
+../../uart_interrupts_bsp/microblaze_0/include/xuartlite_l.h:189:17: warning: passing argument 1 of 'Xil_In32' makes integer from pointer without a cast [-Wint-conversion]
+  XUartLite_In32((BaseAddress) + (RegOffset))
+                 ^
+../../uart_interrupts_bsp/microblaze_0/include/xuartlite_l.h:226:3: note: in expansion of macro 'XUartLite_ReadReg'
+   XUartLite_ReadReg((BaseAddress), XUL_STATUS_REG_OFFSET)
+   ^~~~~~~~~~~~~~~~~
+../../uart_interrupts_bsp/microblaze_0/include/xuartlite_l.h:261:4: note: in expansion of macro 'XUartLite_GetStatusReg'
+  ((XUartLite_GetStatusReg((BaseAddress)) & XUL_SR_TX_FIFO_FULL) == \
+    ^~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:64:10: note: in expansion of macro 'XUartLite_IsTransmitFull'
+  while (!XUartLite_IsTransmitFull(baseaddr_p) && !UART_TX_BUFFER_DONE) {
+          ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../../uart_interrupts_bsp/microblaze_0/include/xuartlite_l.h:69:0,
+                 from ../src/helloworld.c:1:
+../../uart_interrupts_bsp/microblaze_0/include/xil_io.h:147:19: note: expected 'UINTPTR {aka unsigned int}' but argument is of type 'void *'
+ static INLINE u32 Xil_In32(UINTPTR Addr)
+                   ^~~~~~~~
+../src/helloworld.c:65:22: warning: passing argument 1 of 'XUartLite_SendByte' makes integer from pointer without a cast [-Wint-conversion]
+   XUartLite_SendByte(baseaddr_p, uart_send_buffer[uart_tx_idx++]);
+                      ^~~~~~~~~~
+In file included from ../src/helloworld.c:1:0:
+../../uart_interrupts_bsp/microblaze_0/include/xuartlite_l.h:322:6: note: expected 'UINTPTR {aka unsigned int}' but argument is of type 'void *'
+ void XUartLite_SendByte(UINTPTR BaseAddress, u8 Data);
+      ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:70:3: warning: implicit declaration of function 'free' [-Wimplicit-function-declaration]
+   free(uart_send_buffer);
+   ^~~~
+../src/helloworld.c:70:3: warning: incompatible implicit declaration of built-in function 'free'
+../src/helloworld.c:70:3: note: include '<stdlib.h>' or provide a declaration of 'free'
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:113:19: warning: pointer targets in passing argument 1 of 'uart_buffered_tx' differ in signedness [-Wpointer-sign]
+  uart_buffered_tx("Hello world! I'm a super long string! Transmit me, please!\r\n", XPAR_AXI_UARTLITE_0_BASEADDR);
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:38:6: note: expected 'unsigned char *' but argument is of type 'char *'
+ void uart_buffered_tx(unsigned char *buffer, void *baseaddr_p) {
+      ^~~~~~~~~~~~~~~~
+In file included from ../../uart_interrupts_bsp/microblaze_0/include/xil_printf.h:12:0,
+                 from ../../uart_interrupts_bsp/microblaze_0/include/xil_io.h:61,
+                 from ../../uart_interrupts_bsp/microblaze_0/include/xuartlite_l.h:69,
+                 from ../src/helloworld.c:1:
+../../uart_interrupts_bsp/microblaze_0/include/xparameters.h:659:38: warning: passing argument 2 of 'uart_buffered_tx' makes pointer from integer without a cast [-Wint-conversion]
+ #define XPAR_AXI_UARTLITE_0_BASEADDR 0x40600000
+                                      ^
+../src/helloworld.c:113:85: note: in expansion of macro 'XPAR_AXI_UARTLITE_0_BASEADDR'
+  uart_buffered_tx("Hello world! I'm a super long string! Transmit me, please!\r\n", XPAR_AXI_UARTLITE_0_BASEADDR);
+                                                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:38:6: note: expected 'void *' but argument is of type 'int'
+ void uart_buffered_tx(unsigned char *buffer, void *baseaddr_p) {
+      ^~~~~~~~~~~~~~~~
+../src/helloworld.c:114:19: warning: pointer targets in passing argument 1 of 'uart_buffered_tx' differ in signedness [-Wpointer-sign]
+  uart_buffered_tx("One sec, gotta transmit a message on UART1.\r\n", XPAR_AXI_UARTLITE_1_BASEADDR);
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:38:6: note: expected 'unsigned char *' but argument is of type 'char *'
+ void uart_buffered_tx(unsigned char *buffer, void *baseaddr_p) {
+      ^~~~~~~~~~~~~~~~
+In file included from ../../uart_interrupts_bsp/microblaze_0/include/xil_printf.h:12:0,
+                 from ../../uart_interrupts_bsp/microblaze_0/include/xil_io.h:61,
+                 from ../../uart_interrupts_bsp/microblaze_0/include/xuartlite_l.h:69,
+                 from ../src/helloworld.c:1:
+../../uart_interrupts_bsp/microblaze_0/include/xparameters.h:669:38: warning: passing argument 2 of 'uart_buffered_tx' makes pointer from integer without a cast [-Wint-conversion]
+ #define XPAR_AXI_UARTLITE_1_BASEADDR 0x40610000
+                                      ^
+../src/helloworld.c:114:70: note: in expansion of macro 'XPAR_AXI_UARTLITE_1_BASEADDR'
+  uart_buffered_tx("One sec, gotta transmit a message on UART1.\r\n", XPAR_AXI_UARTLITE_1_BASEADDR);
+                                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:38:6: note: expected 'void *' but argument is of type 'int'
+ void uart_buffered_tx(unsigned char *buffer, void *baseaddr_p) {
+      ^~~~~~~~~~~~~~~~
+../src/helloworld.c:115:19: warning: pointer targets in passing argument 1 of 'uart_buffered_tx' differ in signedness [-Wpointer-sign]
+  uart_buffered_tx("Alright, I'm back, transmitting on UART0.\r\n", XPAR_AXI_UARTLITE_0_BASEADDR);
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:38:6: note: expected 'unsigned char *' but argument is of type 'char *'
+ void uart_buffered_tx(unsigned char *buffer, void *baseaddr_p) {
+      ^~~~~~~~~~~~~~~~
+In file included from ../../uart_interrupts_bsp/microblaze_0/include/xil_printf.h:12:0,
+                 from ../../uart_interrupts_bsp/microblaze_0/include/xil_io.h:61,
+                 from ../../uart_interrupts_bsp/microblaze_0/include/xuartlite_l.h:69,
+                 from ../src/helloworld.c:1:
+../../uart_interrupts_bsp/microblaze_0/include/xparameters.h:659:38: warning: passing argument 2 of 'uart_buffered_tx' makes pointer from integer without a cast [-Wint-conversion]
+ #define XPAR_AXI_UARTLITE_0_BASEADDR 0x40600000
+                                      ^
+../src/helloworld.c:115:68: note: in expansion of macro 'XPAR_AXI_UARTLITE_0_BASEADDR'
+  uart_buffered_tx("Alright, I'm back, transmitting on UART0.\r\n", XPAR_AXI_UARTLITE_0_BASEADDR);
+                                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:38:6: note: expected 'void *' but argument is of type 'int'
+ void uart_buffered_tx(unsigned char *buffer, void *baseaddr_p) {
+      ^~~~~~~~~~~~~~~~
+Finished building: ../src/helloworld.c
+ 
+Building target: uart_interrupts.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../uart_interrupts_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "uart_interrupts.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: uart_interrupts.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size uart_interrupts.elf  |tee "uart_interrupts.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26688	   1380	   3340	  31408	   7ab0	uart_interrupts.elf
+Finished building: uart_interrupts.elf.size
+ 
 
-00:43:47 Build Finished (took 80ms)
+01:05:43 Build Finished (took 112ms)
 
