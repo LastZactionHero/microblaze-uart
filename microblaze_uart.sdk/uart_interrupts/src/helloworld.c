@@ -17,42 +17,54 @@ typedef struct buffered_tx {
   struct buffered_tx *next;
 } buffered_tx_t;
 
-buffered_tx_t *tx_queue = NULL;
+buffered_tx_t *tx_queue_0 = NULL;
+buffered_tx_t *tx_queue_1 = NULL;
 
-
-int txBufferFull() {
-	return XUartLite_IsTransmitFull(XPAR_AXI_UARTLITE_0_BASEADDR);
+// Is the TX Buffer Full?
+int tx_buffer_full(void *baseaddr_p) {
+	return XUartLite_IsTransmitFull(baseaddr_p);
 }
 
-void txAddToBuffer(char c) {
-	XUartLite_SendByte(XPAR_AXI_UARTLITE_0_BASEADDR, c); // Echo
+// TX a single character
+void tx_send_char(char c, void *baseaddr_p) {
+	XUartLite_SendByte(baseaddr_p, c);
+}
+
+// Identify the TX queue by UART base address
+buffered_tx_t **queue_select(void *baseaddr_p) {
+	return baseaddr_p == XPAR_AXI_UARTLITE_0_BASEADDR ? &tx_queue_0 : &tx_queue_1;
 }
 
 // UART0 ISR
 void uart_0_int_handler(void *baseaddr_p) {
-	if (!txBufferFull()) {
-		queueTx(tx_queue);
+	if (!tx_buffer_full(baseaddr_p)) {
+		enqueue_tx(tx_queue_0, baseaddr_p);
 	}
 }
 
 // UART1 ISR
-void uart_1_int_handler(UINTPTR *baseaddr_p) {
+void uart_1_int_handler(void *baseaddr_p) {
+	if (!tx_buffer_full(baseaddr_p)) {
+		enqueue_tx(tx_queue_1, baseaddr_p);
+	}
 }
 
-
-void queueTx(buffered_tx_t *tx) {
+// Transmit until full
+// Cleanup and increment to next message
+void enqueue_tx(buffered_tx_t *tx, void *baseaddr_p) {
   if (tx == NULL) { return; }
 
   int strLen = strlen(tx->string);
 
   // Transmit until buffer is full
-  while (tx != NULL && tx->tx_posn < strLen && !txBufferFull()) {
-    txAddToBuffer(tx->string[tx->tx_posn++]);
+  while (tx != NULL && tx->tx_posn < strLen && !tx_buffer_full(baseaddr_p)) {
+    tx_send_char(tx->string[tx->tx_posn++], baseaddr_p);
   }
 
   // End of this message: Move on to the next one if available
   if (tx->tx_posn == strLen) {
-    tx_queue = tx->next;
+	buffered_tx_t **tx_queue = queue_select(baseaddr_p);
+    *tx_queue = tx->next;
     free(tx->string);
     free(tx);
   }
@@ -62,24 +74,25 @@ void queueTx(buffered_tx_t *tx) {
 
 // Transmit to the UART
 // Buffered to send larger amounts of data
-// TODO: Pass in a device ID, use a different buffer for different device IDs
 void uart_buffered_tx(unsigned char *string, void *baseaddr_p) {
 	// Create a new message and copy the string
 	buffered_tx_t *tail = (buffered_tx_t*) calloc(sizeof(buffered_tx_t), 1);
 	tail->string = calloc(strlen(string) + 1, 1);
 	strncpy(tail->string, string, strlen(string));
 
+	buffered_tx_t **tx_queue = queue_select(baseaddr_p);
+
 	// Append the new message to the end of the queue
-	if (tx_queue == NULL) {
-		tx_queue = tail;
+	if (*tx_queue == NULL) {
+		*tx_queue = tail;
 	} else {
-		buffered_tx_t *iter = tx_queue;
+		buffered_tx_t *iter = *tx_queue;
 		while (iter->next) { iter = iter->next; }
 		iter->next = tail;
 	}
 
 	// Start transmit if this is the first message
-	if (tail == tx_queue) { queueTx(tail); }
+	if (tail == *tx_queue) { enqueue_tx(tail, baseaddr_p); }
 }
 
 int main(void)
@@ -120,7 +133,7 @@ int main(void)
 	XUartLite_EnableIntr(XPAR_AXI_UARTLITE_1_BASEADDR);
 
 	uart_buffered_tx("Hello world! I'm a super long string! Transmit me, please!\r\n", XPAR_AXI_UARTLITE_0_BASEADDR);
-	uart_buffered_tx("One sec, gotta transmit a message on UART0.\r\n", XPAR_AXI_UARTLITE_0_BASEADDR);
+	uart_buffered_tx("One sec, gotta transmit a message on UART1.\r\n", XPAR_AXI_UARTLITE_1_BASEADDR);
 	uart_buffered_tx("Alright, I'm back, transmitting on UART0.\r\n", XPAR_AXI_UARTLITE_0_BASEADDR);
 
 	/* Wait for interrupts to occur */
