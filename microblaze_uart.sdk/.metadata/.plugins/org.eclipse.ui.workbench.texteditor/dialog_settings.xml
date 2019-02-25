@@ -2,22 +2,27 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="uart_tx_fifo" key="selection"/>
+		<item value="enqueue_tx" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="queue_tx"/>
+			<item value="enqueue_"/>
+			<item value="tx_add_to_buffer"/>
+			<item value="txAddToBuffer"/>
+			<item value="queueTx"/>
+			<item value="txBufferFull"/>
+			<item value="txBufferEmpty"/>
 			<item value="uart_tx_fifo"/>
-			<item value="XUartLite_RecvByte"/>
-			<item value="full"/>
-			<item value="UART"/>
-			<item value="FIFO"/>
-			<item value="XUL_TX_FIFO_OFFSET"/>
-			<item value="DEvicE"/>
-			<item value="DEVICE_ID"/>
 		</list>
 		<list key="replacehistory">
+			<item value="enqueue_tx"/>
+			<item value="tx_send_char"/>
+			<item value="tx_add_to_buffer"/>
+			<item value="queue_tx"/>
+			<item value="tx_buffer_full"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

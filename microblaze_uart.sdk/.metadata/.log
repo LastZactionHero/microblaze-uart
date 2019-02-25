@@ -6734,3 +6734,55 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-15
 
 !ENTRY com.xilinx.sdk.utils 0 0 2019-02-11 00:48:22.501
 !MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-02-11 00:51:44.138
+!MESSAGE XSCT Command: [disconnect tcfchan#24], Thread: Thread-2121
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-02-11 00:51:44.140
+!MESSAGE XSCT command with result: [disconnect tcfchan#24], Result: [null, ]. Thread: Thread-2121
+!SESSION 2019-02-25 11:36:47.598 -----------------------------------------------
+eclipse.buildId=2018.3
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/zach/Development/microblaze-uart/microblaze_uart.sdk
+
+!ENTRY org.eclipse.ui 2 0 2019-02-25 11:36:49.938
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-02-25 11:36:49.938
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2019-02-25 11:36:50.941
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2019-02-25 11:36:50.941
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-02-25 11:36:59.545
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-02-25 11:36:59.545
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-02-25 11:36:59.551
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-02-25 11:36:59.552
+!MESSAGE XSCT Command: [setws /home/zach/Development/microblaze-uart/microblaze_uart.sdk], Thread: Thread-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-02-25 11:36:59.826
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-02-25 11:36:59.826
+!MESSAGE XSCT command with result: [setws /home/zach/Development/microblaze-uart/microblaze_uart.sdk], Result: [null, ]. Thread: Thread-16
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-02-25 11:36:59.850
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/zach/Development/microblaze-uart/microblaze_uart.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-02-25 11:37:01.903
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/zach/Development/microblaze-uart/microblaze_uart.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-02-25 11:37:01.904
+!MESSAGE XSCT Command: [::hsi::utils::openhw /home/zach/Development/microblaze-uart/microblaze_uart.sdk/design_1_wrapper_hw_platform_1/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-02-25 11:37:02.050
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /home/zach/Development/microblaze-uart/microblaze_uart.sdk/design_1_wrapper_hw_platform_1/system.hdf], Result: [null, ]. Thread: main
