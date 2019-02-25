@@ -1,6 +1,6 @@
-00:48:20 **** Incremental Build of configuration Debug for project uart_interrupts ****
+11:57:28 **** Incremental Build of configuration Debug for project uart_interrupts ****
 make all 
 make: Nothing to be done for `all'.
 
-00:48:20 Build Finished (took 64ms)
+11:57:28 Build Finished (took 75ms)
 

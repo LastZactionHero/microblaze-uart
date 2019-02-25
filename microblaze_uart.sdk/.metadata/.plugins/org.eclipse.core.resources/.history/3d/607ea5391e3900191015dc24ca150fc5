@@ -31,8 +31,7 @@ int rx_buffer_empty(void *baseaddr_p) {
 
 // TX a single character
 void tx_send_char(char c, void *baseaddr_p) {
-//	XUartLite_SendByte(baseaddr_p, c);
-	XUartLite_WriteReg(baseaddr_p, XUL_TX_FIFO_OFFSET, c);
+	XUartLite_SendByte(baseaddr_p, c);
 }
 
 // Identify the TX queue by UART base address
@@ -49,6 +48,7 @@ void uart_0_int_handler(void *baseaddr_p) {
 		char string[2];
 		string[0] = XUartLite_ReadReg(baseaddr_p, XUL_RX_FIFO_OFFSET);
 		string[1] = 0;
+
 		uart_buffered_tx(string, baseaddr_p);
 	}
 }
